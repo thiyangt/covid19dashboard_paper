@@ -1,0 +1,39 @@
+---
+title: "Interactive dashboard to monitor the COVID-19 outbreak"
+type: 
+author:
+  - name: Thiyanga S. Talagala
+    affil: a
+    email: ttalagala@sjp.ac.lk
+  - name: Randi Shashikala
+    affil: a
+affiliation:
+  - num: a
+    address: |
+      Department of Statistics, University of Sri Jayeardenepura
+bibliography: interactcadsample.bib
+appendix: appendix.tex
+abstract: |
+  As of September 20th, 2021, 221 countries and territories are infected by the COVID-19 worldwide pandemic. Dashboards are the most often used visualization method for visualizing COVID-19 data and informing the public. The main objective of this study is to identify different features, visualization methods & improvements that should be occurred by exploring the existing dashboards and to develop a dashbored to visualize COVID-19 outbreak in Sri Lanka. We explored 15 different dashboards. The most commonly used visualization methods in dashboard development are bar charts, line charts, and interactive maps. Dashboards that fit on a single screen are preferable than others.
+keywords: |
+  COVID-19, Dashboard, Visualization
+header-includes: |
+  \usepackage{hyperref}
+  \usepackage[utf8]{inputenc}
+  \def\tightlist{}
+output: rticles::tf_article
+---
+
+# Introduction
+
+The COVID-19 pandemic is a global coronavirus illness outbreak that began in 2019 and is being caused by the Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) virus. In December 2019, the first COVID-19-infected patient was discovered in Wuhan, China. According to Worldmeter data, there were 229835231 confirmed cases, 206515718 recovered cases, 18605877 active cases, and 4713636 deaths worldwide as of September 20, 2021. Currently, 99.5 percent of active patients are in a mild state, while 0.5 percent are in a critical state.
+
+Dashboards are one of the greatest visual interpretation methods for tracking the COVID-19 pandemic's spread and communication. There are a plethora of COVID-19 visualization dashboards that have been designed to visualize the pandemic's global and local status. Different software can be used to generate dashboards. We explored 15 dashboards designed to visualize COVID-19 data in the global and country levels. First, dashboards were compared to identify the various features, visualization approaches, and enhancements that should be implemented. Next, we developed an interactive dashboard to visualized COVID-19 outbreak in Sri Lanka.
+
+# Literature Review
+
+# Methodology
+
+# Results
+
+# Conclusions
