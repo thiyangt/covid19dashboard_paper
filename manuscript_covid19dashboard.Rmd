@@ -199,10 +199,6 @@ Table 5 provides an overview of methods that have been used to visualize data.
 
 
 
-\newpage
-
-
-
 # Results
 
 
