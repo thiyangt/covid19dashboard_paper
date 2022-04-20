@@ -231,6 +231,14 @@ Inorder, to compare patterns across districts min-max transformation is used to 
 Bar charts & line charts are the most frequently used tools for the visualization of total cases, daily cases & comparisons with respect to time. Some dashboards contained doughnut shape pie charts to summarize the total figures. In almost each and every dashboard, value boxes have been used to represent total figures. Some dashboards contained interactive maps & data tables to visualize the distribution of cases by country, province, region or state. All dashboards are daily updating real time dashboards. Gender, age groups and ethnicity can be identified as common breakdowns. The data sets & related links are available on most of the dashboards & can be downloaded. It can be seen that it is very easy, clear and user friendly to identify confirmed, recovered and deceased cases in dashboards which include one color theme for the whole dashboard. Dashboards with the dark background are more comfortable to the eyes than dashboards with light background & light colors. Also, it is better if the dashboard can be fitted on a single screen rather than adjusting through a grid overlay. 
 
 
+
+# References
+
+
+<div id="refs"></div>
+
+\newpage
+
 # Appendix: Overview of reviewed dashboard
 
 Real time updated COVID-19 dashboard created by the John Hopkins University Center for Systems Science & Engineering (JHU CSSE) has included total confirmed cases & total deaths by country, province/region/state (not for all countries)[6]. Weekly & daily global confirmed cases, deaths & vaccine doses have been visualized using bar plots related to the date in the side panels. Also, an interactive world map has included in the dashboard to represent total confirmed cases, incidence rate, fatality ratio & vaccine doses administered by country & state of US. All the links related to the data sets has been included in the dashboard. In this dashboard red, white, green colors has been used to indicate confirmed cases, deaths & vaccine doses respectively. The dashboard has fitted on a single screen.
@@ -356,7 +364,3 @@ on a single screen. This dashboard format is similar to the John Hopkins dashboa
 ```{r, fig.cap="Robert Koch-Institute COVID-19 dashboard for German"}
 knitr::include_graphics("Images/15.PNG")
 ```
-
-# References
-
-
