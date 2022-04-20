@@ -114,6 +114,8 @@ Department of Statistics, Faculty of Applied Sciences
 
 University of Sri Jayewardenepura, Sri Lanka, CO 10230
 
+\hspace{3cm}
+
 \textbf{Abstract}
 
 As of September 20th, 2021, 221 countries and territories are infected
@@ -424,6 +426,29 @@ in one panel.
 
 \hypertarget{methodology}{%
 \section{Methodology}\label{methodology}}
+
+\hypertarget{data}{%
+\subsection{Data}\label{data}}
+
+We obtained data from COVID-19 situation reports published by
+Epidemiology Unit, Ministry of Health Sri Lanka. We obtained data
+corresponds to number of death cases, number of reported cases, number
+of recovered cases and COVID-19 vaccinated counts in Sri Lanka. The data
+are made available through an open-source R package covid19srilanka
+(Talagala 2021).
+
+\hypertarget{software}{%
+\subsection{Software}\label{software}}
+
+R software was used for data cleaning and analysis. The flexdashboard
+(Iannone, Allaire, and Borges 2020) package was used to build the data
+visualization dashboard.
+
+\hypertarget{data-visualization}{%
+\subsection{Data visualization}\label{data-visualization}}
+
+Inorder, to compare patterns across districts min-max transformation is
+used to normalize data into 0-1 scale.
 
 \newpage
 
@@ -765,6 +790,11 @@ dashboard format is similar to the John Hopkins dashboard.
 {``{COVID-19 ZA Dashboard - Data Studio}.''} 2021.
 \url{https://datastudio.google.com/u/0/\%0Areporting/1b60bdc7-bec7-44c9-ba29-be0e043d8534/page/hrUIB}.
 
+\leavevmode\hypertarget{ref-flexdashboard}{}%
+Iannone, Richard, JJ Allaire, and Barbara Borges. 2020.
+\emph{Flexdashboard: R Markdown Format for Flexible Dashboards}.
+\url{https://CRAN.R-project.org/package=flexdashboard}.
+
 \leavevmode\hypertarget{ref-nz}{}%
 {``{New Zealand COVID-19 Surveillance Dashboard}.''} 2021.
 \url{https://nzcoviddashboard.esr.c\%0Ari.nz/\#!/}.
@@ -777,6 +807,11 @@ Hospitals Ltd}.''} 2021.
 \leavevmode\hypertarget{ref-rki}{}%
 {``{RKI COVID-19 Germany -- ArcGIS Experience}.''} 2021.
 \url{https://experience.arcgis.co\%0Am/experience/478220a4c454480e823b17327b2bf1d4}.
+
+\leavevmode\hypertarget{ref-talagala}{}%
+Talagala, Thiyanga S. 2021. \emph{Covid19srilanka: The 2019 Novel
+Coronavirus COVID-19 (2019-nCoV) Data in Sri Lanka}.
+\url{https://github.com/thiyangt/covid19srilanka}.
 
 \leavevmode\hypertarget{ref-russia}{}%
 {``{The Global COVId-19 Index (GCI) -- Russia Dashboard -- PEMANDU

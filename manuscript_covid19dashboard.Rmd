@@ -27,6 +27,7 @@ Department of Statistics, Faculty of Applied Sciences
 
 University of Sri Jayewardenepura, Sri Lanka, CO 10230
 
+\hspace{3cm}
 
 **Abstract**
 
@@ -166,6 +167,20 @@ As shown in table 04 almost each & every dashboard, line charts & bar charts hav
 
 # Methodology
 
+## Data
+
+We obtained data from COVID-19 situation reports published by Epidemiology Unit, Ministry of Health Sri Lanka. We obtained data corresponds to number of death cases, number of reported cases, number of recovered cases and COVID-19 vaccinated counts in Sri Lanka. The data are made available through an open-source R package covid19srilanka [@talagala]. 
+
+## Software
+
+R software was used for data cleaning and analysis. The flexdashboard [@flexdashboard] package was used to build the data visualization dashboard.
+
+## Data visualization
+
+Inorder, to compare patterns across districts min-max transformation is used to normalize data into 0-1 scale. 
+
+
+
 \newpage
 
 
@@ -194,7 +209,7 @@ The "Sri Lanka COVID-19 Dashboard" provides an overview of the COVID-19 pandemic
 # Discussion and Further research
 
 
-Bar charts & line charts are the most frequently used tools for the visualization of total cases, daily cases & comparisons with respect to time. Some dashboards contained doughnut shape pie charts to summarize the total figures. In almost each and every dashboard, value boxes have been used to represent total figures. Some dashboards contained interactive maps & data tables to visualize the distribution of cases by country, province, region or state. All dashboards are daily updating real time dashboards. Gender, age groups and ethnicity can be identified as common breakdowns. The data sets & related links are available on most of the dashboards & can be downloaded. It can be seen that it is very easy, clear and user friendly to identify confirmed, recovered and deceased cases in dashboards which include one color theme for the whole dashboard. Dashboards with the dark background are more comfortable to the eyes than dashboards with light background & light colors. Also, it is better if the dashboard can be fitted on a single screen rather than adjusting through a grid overlay.
+Bar charts & line charts are the most frequently used tools for the visualization of total cases, daily cases & comparisons with respect to time. Some dashboards contained doughnut shape pie charts to summarize the total figures. In almost each and every dashboard, value boxes have been used to represent total figures. Some dashboards contained interactive maps & data tables to visualize the distribution of cases by country, province, region or state. All dashboards are daily updating real time dashboards. Gender, age groups and ethnicity can be identified as common breakdowns. The data sets & related links are available on most of the dashboards & can be downloaded. It can be seen that it is very easy, clear and user friendly to identify confirmed, recovered and deceased cases in dashboards which include one color theme for the whole dashboard. Dashboards with the dark background are more comfortable to the eyes than dashboards with light background & light colors. Also, it is better if the dashboard can be fitted on a single screen rather than adjusting through a grid overlay. 
 
 
 # Appendix: Overview of reviewed dashboard
