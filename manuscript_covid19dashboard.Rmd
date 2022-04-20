@@ -194,7 +194,8 @@ Table 5 provides an overview of methods that have been used to visualize data.
 |Total administrated does by vaccine name       | Stacked bar chart \hfill\break
 |Total administrated does by vaccine name       | Stacked bar chart \hfill\break
 |Total administrated does by vaccine name       | Stacked bar chart \hfill\break
-
+|Comparison of cases with in Sri Lanka with Top 10 countries       | Cummulative cases by time, Log of cummulative cases by time, stacked bar chart \hfill\break
+|Spread of COVID-19 around the world      | Choropleth maps \hfill\break
 
 
 
