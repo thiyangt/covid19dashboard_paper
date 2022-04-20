@@ -1,6 +1,8 @@
 ---
 title: "Interactive dashboard to monitor the COVID-19 outbreak"
-output: pdf_document
+output: 
+  pdf_document: 
+    keep_tex: true
 bibliography: references.bib
 ---
 
