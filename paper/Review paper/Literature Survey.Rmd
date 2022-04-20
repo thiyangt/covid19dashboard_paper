@@ -1,0 +1,210 @@
+---
+title: "Review of COVID-19 Dashboards"
+author: "Randi Shashikala"
+date: "9/20/2021"
+output: 
+  html_document:
+  toc: TRUE
+---
+<style>
+body{
+text-align: justify}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Abstract
+
+There are 221 countries & territories which are affected by the COVID-19 global pandemic as 20th of September 2021.To visualize the COVID-19 data & inform the general public, dashboards are the most commonly used visualization tool. The main objective of this study is to identify different features, visualization methods & improvements that should be occurred by exploring the existing dashboards. 15 different dashboards that have been developed to visualize the COVID-19 data for different countries & global has been explored here. Bar charts, line charts & Interactive maps are the most frequently used visualization tools in developing the dashboards. Dashboards that are fitted on a single screen is better than others.
+
+<b>Key words</b> : COVID-19, Dashboard, Visualization
+
+# Introduction
+
+The COVID-19 pandemic is the ongoing global pandemic of coronavirus disease 2019
+caused by the Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) virus. The first
+patient infected with COVID-19 was identified in Wuhan, China, in December 2019. There have been reported 229835231 confirmed cases, 206515718 recovered cases, 18605877 active cases & 4713636 deaths in global as 20th September 2021. Currently 99.5% of active patients are mild condition and 0.5% of patients are in critical situation.
+
+Dashboards are one of the best visual interpretation method of tracking the spread & communication of COVID-19 pandemic. There are so many COVID-19 visualization dashboards that have been created to visualize the global & local situation of pandemic. Real time updated COVID-19 dashboard created by the John Hopkins University Center for Systems Science & Engineering (JHU CSSE) has included total confirmed cases & total deaths by country, province/region/state (not for all countries)[6]. Weekly & daily global confirmed cases, deaths & vaccine doses have been visualized using bar plots related to the date in the side panels. Also, an interactive world map has included in the dashboard to represent total confirmed cases, incidence rate, fatality ratio & vaccine doses administered by country & state of US. All the links related to the data sets has been included in the dashboard. In this dashboard red, white, green colors has been used to indicate confirmed cases, deaths & vaccine doses respectively. The dashboard has fitted on a single screen.
+
+
+<center>
+![](1.PNG) <br/>
+**Figure 01: Johns Hopkins University COVID-19 Dashboard**
+</center>
+<br/>
+
+
+Live updated “WHO COVID-19 dashboard” contained four panels. The interactive world
+map in the dashboard has visualized the distribution of COVID-19 confirmed cases, deaths &
+vaccination by country [15]. Line chart & bar charts have been used as visualization plots. Blue, red, green colors have been used to represent confirmed cases, deaths & vaccination respectively. The links related to the underlying data was available in the dashboard. The dashboard was not fitted on a single screen.
+
+<center>
+![](2.PNG) <br/>
+**Figure 02: WHO COVID-19 Dashboard**
+</center>
+<br/>
+
+The “COVID-19 surveillance dashboard” created by the University of Virginia in
+collaboration with Bio complexity Institute has included interactive world map with a time slide to visualize the confirmed cases, recovered cases, deaths, active cases & vaccine details [7]. Line charts, bar charts & data tables have been visualized in the dashboard. Red, blue, green & yellow colors have been used to identify confirmed, deceased, recovered & active cases respectively. The data behind the dashboard also available on the dashboard & can be downloaded. The dashboard has fitted on a single screen.
+
+<center>
+![](3.png)<br/>
+**Figure 03: COVID-19 Surveillance Dashboard**
+</center>
+<br/>
+
+Corona cases (COVID-19) per municipality in Belgium dashboard has included interactive
+map for distribution of total confirmed cases per municipality, bar chart for number of cases per province, line charts for number of cases per day by region & municipality, dodge bar chart for deaths per region, per age & pie chart for deaths per age as visualization methods[3]. Also it included several value boxes for total cases, total deaths & hospital situations. There was no specific color theme used in this dashboard. This dashboard also fitted on a single screen.
+
+<center>
+![](4.png)<br/>
+**Figure 04: Corona cases per Municipality in Belgium Dashboard**
+</center>
+<br/>
+
+The COVID-19 dashboard for England created by NHS providers included daily totals, daily changes & weekly changes in new cases, hospital admission, patients in hospital, and patients
+in ICU beds, deaths & vaccinations in England as counts [2]. Bar plots for daily new cases, hospital admissions & deaths for last 30 days have been added in this dashboard. Also it has included data table for total count, daily changes (as increase or decrease), weekly changes (as increase or decrease) of new cases & hospital admission by region. It can be seen that, three different colors have been used in bar plot as orange for new cases, green for hospital admissions & red for deaths. These plots were not interactive plots & there was only one panel. The dashboard was not fitted on a single screen.
+
+<center>
+![](5.png)<br/>
+**Figure 05: COVID-19 dashboard for England**
+</center>
+<br/>
+
+
+The Environmental Science and Research Institute COVID-19 dashboard for New Zealand (was developed & is maintained in collaboration with Epi-interactive Ltd) contained five panels
+as overview, outbreak, source, international & ESR reports [10]. In this real time updated dashboard, they have included value boxes for total confirmed cases, recovered cases, deaths & interactive map has been added for distribution of confirmed & probable cases as incidence & count. Also they have included bar charts for confirmed cases distribution by gender, age group, & line charts for confirmed & deaths as daily & cumulative. The dashboard has not fitted on a single screen.
+
+<center>
+![](6.png)<br/>
+**Figure 06: NZ COVID-19 Dashboard**
+</center>
+<br/>
+
+Pakistan’s official COVID-19 dashboard is a real time updated dashboard with one panel. This dashboard contains value boxes for total confirmed cases, active cases, deaths, recovered
+cases by country. Province wise cases have been represented by map & data table [11]. Line charts & bar charts have been added to visualize the distribution of cases related to time & province. In the value boxes blue, orange, pink & green colors have been applied for confirmed cases, active cases, deaths & recoveries respectively, but there was no specific color theme used when plotting the graphs. The dashboard cannot be seen on a single screen without grid overlay.
+
+<center>
+![](7.png)<br/>
+**Figure 07: COVID-19 Dashboard for Pakistan**
+</center>
+<br/>
+
+COVID-19 Canada live dashboard has been developed with three panels for provincial data, hospital resources & projections [14]. This dashboard contained interactive map for represented total reported cases & deaths by province. Data tables, line charts, bar charts were the most frequently used visualization types of this dashboard. More details were presented on this dashboard by province like ventilator counts, hospital beds per 100 residents, resource capacity based on critical case rate, effect of social distance, forecast of deaths & cases. There was no specific color theme applied for plotting the graphs. The dashboard also was not fitted on a single screen.
+
+<center>
+![](8.png)<br/>
+**Figure 08: COVID-19 in Canada dashboard**
+</center>
+<br/>
+
+“Zoho analytics COVID-19 live dashboard” for India contained three panels as insight by state, trend analysis & vaccination [1]. Interactive country map has been used to visualize the distribution of confirmed cases, active cases, deaths, recovered cases & vaccination by states in India. Line charts, bar charts & doughnut shape pie charts have been used as other visualization tools. Also this dashboard contained data table for overview of COVID-19 in India. This dashboard also was not fitted on a single screen.
+
+<center>
+![](9.png)<br/>
+**Figure 09: India COVID-19 Dashboard**
+</center>
+<br/>
+
+Italy COVID-19 dashboard created by the COVID-19 task force of the department of infection diseases and the IT service Istituto Superiore Sanita, contained interactive map, bar charts, doughnut shape pie charts & heat maps as visualization tools [4]. It provides data related to COVID-19 cases, cases distribution by age, clinical status, and weekly number of cases notified in Italy by region/province. This dashboard also was not fitted on a single screen.
+
+<center>
+![](10.png)<br/>
+**Figure 10: Italy COVID-19 Dashboard**
+</center>
+<br/>
+
+Live COVID-19 dashboard developed & contributed by an amber innovations for the government of Jamaica has added interactive country map & data table to represent the COVID-
+19 cases by parish [9]. Line charts & bar charts have been added to the dashboard for cumulative & daily COVID-19 cases. Yellow, green & red colors have been used to represent confirmed, recovered & deaths respectively. Doughnut shape pie chart has been added to represent the distribution of recovered, confirmed & deaths by age group. This dashboard was not fitted on a single screen.
+
+<center>
+![](11.png)<br/>
+**Figure 11: Jamaica COVID-19 Dashboard**
+</center>
+<br/>
+
+The GCI COVID-19 dashboard for Russia includes an interactive map, bar charts & line charts to visualize the COVID-19 data [13]. Yellow, green, red & blue colors have been added to
+identify the confirmed, recovered, deaths & active case respectively in plotting the charts.
+
+<center>
+![](12.png)<br/>
+**Figure 12: GCI COVID-19 Dashboard for Russia**
+</center>
+<br/>
+
+COVID-19 live situation analysis dashboard of Sri Lanka contains total & daily figures in Sri Lanka as counts [5]. Total cases & active cases have been visualized by using a line chart. Bar charts have been used to summarize the daily confirmed cases and recovered cases. As well fatality rate, recovery rate & daily investigations using PCR tests & rapid antigen tests have been compared by using the bar charts. Doughnut shape pie chart has been used to summarize the total cases. Blue, green & red colors have been applied to active, recovered & deaths respectively. This dashboard was also not fitted on a single screen.
+
+<center>
+![](13.png)<br/>
+**Figure 13: COVID-19 Live Situational Analysis Dashboard of Sri Lanka**
+</center>
+<br/>
+
+COVID-19 live situation analysis dashboard of Sri Lanka contains total & daily figures in Sri Lanka as counts [5]. Total cases & active cases have been visualized by using a line chart. Bar charts have been used to summarize the daily confirmed cases and recovered cases. As well fatality rate, recovery rate & daily investigations using PCR tests & rapid antigen tests have been compared by using the bar charts. Doughnut shape pie chart has been used to summarize the total cases. Blue, green & red colors have been applied to active, recovered & deaths respectively. This dashboard was also not fitted on a single screen.
+
+<center>
+![](14.png)<br/>
+**Figure 14:COVID 19 ZA South Africa Dashboard**
+</center>
+<br/>
+
+Robert Koch-Institute COVID-19 dashboard for German contains interactive map, line charts & bar charts as visualization tools of COVID-19 data [12]. The dashboard has been fitted
+on a single screen. This dashboard format is similar to the John Hopkins dashboard.
+
+<center>
+![](15.png)<br/>
+**Figure 15: Robert Koch-Institute COVID-19 dashboard for German**
+</center>
+<br/>
+
+# Conclusion
+
+Bar charts & line charts are the most frequently used tools for the visualization of total cases, daily cases & comparisons with respect to time. Some dashboards contained doughnut shape pie charts to summarize the total figures. In almost each and every dashboard, value boxes have been used to represent total figures. Some dashboards contained interactive maps & data tables to visualize the distribution of cases by country, province, region or state. The majority of the dashboards are daily updating real time dashboards. Gender, age groups and ethnicity can be identified as common breakdowns. The data sets & related links are available on most of the dashboards & can be downloaded. It can be seen that it is very easy, clear and user friendly to identify confirmed, recovered and deceased cases in dashboards which include one color theme for the whole dashboard. Dashboards with the dark background are comfortable to eyes than dashboards with light background & light colors. Also, it is better if the dashboard can be fitted on a single screen rather than adjusting through grid overlay.
+
+# References
+
+[1] COVID 19 Dashboard India – ZOHO Analytics – ZOHO, viewed 01 September 2021,
+https://www.zoho.com/covid/india/
+
+[2] COVID-19 dashboard – NHS providers, viewed 31 August 2021,
+https://nhsproviders.org/topics/covid-19/tracking-covid-19-data/covid-19-dashboard
+
+[3] COVID-19 in Belgium – Dashboard, viewed 31 August 2021,https://esribelux.maps.arcgis.com/apps/opsdashboard/index.html#/e350724c87af49bb9ce29646f8a42344
+
+[4] COVID-19 integrated surveillance data in Italy – EpiCentro, viewed 02 September 2021,
+https://www.epicentro.iss.it/en/coronavirus/sars-cov-2-dashboard
+
+[5] COVID-19: Live situational Analysis Dashboard of Sri Lanka, viewed 08 September 2021,
+https://hpb.health.gov.lk/covid19-dashboard/
+
+[6] COVID-19 Map – Johns Hopkins Coronavirus Resource Center, viewed 31 August 2021,
+https://coronavirus.jhu.edu/map.html
+
+[7] COVID-19 Surveillance Dashboard – NSSAC Research, viewed 08 September 2021,
+https://nssac.bii.virginia.edu/covid-19/dashboard/
+
+[8] COVID 19 ZA Dashboard – Data Studio, viewed 08 September 2021,
+https://datastudio.google.com/u/0/reporting/1b60bdc7-bec7-44c9-ba29-be0e043d8534/page/hrUIB
+
+[9] Ministry of Health and Wellness, viewed 02 September 2021, https://jamcovid19.moh.gov.jm/
+
+[10] New Zealand COVID-19 Surveillance Dashboard, viewed 27 August 2021,
+https://nzcoviddashboard.esr.cri.nz/#!/
+
+[11] Pakistan’s Official COVID-19 Dashboard – Shifa International Hospitals Ltd, viewed 01
+September 2021, https://www.shifa.com.pk/covid-19-pakistan/
+
+[12] RKI COVID-19 Germany – ArcGIS Experience, viewed 08 September 2021,
+https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4
+
+[13] The Global COVId-19 Index (GCI) – Russia Dashboard – PEMANDU Associates, viewed
+31 August 2021, https://covid19.pemandu.org/Russia
+
+[14] Track COVID-19 Across Canada Using Our Interactive Dashboards, viewed 01 September
+2021, https://samples.dundas.com/Dashboard/62cef916-5488-4d3b-9c57-204092d01813?e=false&vo=viewonly
+
+[15] WHO Coronavirus (COVID-19) Dashboard, viewed 01 September 2021,
+https://covid19.who.int/?gclid=CjwKCAjwvuGJBhB1EiwACU1Aia9pAaNLOkBMS2KVlSqXptskt1t46b7_bNv6vpTt_HjvXfrnDS-rWxoCE3sQAvD_BwE

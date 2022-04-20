@@ -71,6 +71,26 @@
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 \title{Interactive dashboard to monitor the COVID-19 outbreak}
 \author{}
@@ -139,7 +159,45 @@ Sri Lanka.
 \hypertarget{literature-review}{%
 \section{Literature Review}\label{literature-review}}
 
-The 15 dashboards we used in the study are listed below (Table 1).
+Initially 15 dashboards were compared to determine which data types are
+most frequently shown in dashboards. The 15 dashboards we used in the
+study are listed below (Table 1).
+
+\textbf{Table 01: Labeled of the Dashboards}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.13}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.67}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.20}}@{}}
+\toprule
+No & Name of the Dashboard & Reference \\
+\midrule
+\endhead
+1 & COVID-19 dashboard created by the John Hopkins University Center for
+Systems Science \& Engineering (JHU CSSE) & \\
+2 & WHO COVID-19 Dashboard & \\
+3 & COVID-19 surveillance dashboard created by the University of
+Virginia & \\
+4 & Corona cases (COVID-19) per municipality in Belgium dashboard &
+{``{COVID 19 Dashboard -- Belgium}''} (2022) \\
+5 & COVID-19 dashboard for England created by NHS providers & {``{COVID
+19 Dashboard -- NHS providers}''} (2022) \\
+6 & NZ COVID-19 Dashboard & \\
+7 & Pakistan's official COVID-19 dashboard & \\
+8 & COVID-19 Canada live dashboard & \\
+9 & India (COVID-19) Dashboard & {``{COVID 19 Dashboard India -- ZOHO
+Analytics -- ZOHO}''} (2022) \\
+10 & Italy COVID-19 dashboard & {``{COVID-19 integrated surveillance
+data in Italy -- EpiCentro}''} (2022) \\
+11 & Jamaica COVID-19 Dashboard & \\
+12 & GCI COVID-19 dashboard for Russia & \\
+13 & COVID-19 live situation analysis dashboard of Sri Lanka &
+{``{COVID-19: Live situational Analysis Dashboard of Sri Lanka,}''}
+(2022) \\
+14 & COVID 19 ZA South Africa Dashboard & \\
+15 & COVID-19 dashboard for Germany & \\
+\bottomrule
+\end{longtable}
 
 \hypertarget{methodology}{%
 \section{Methodology}\label{methodology}}
@@ -217,6 +275,32 @@ About & This panel contains the details about the dashboard. \\
 research}\label{discussion-and-further-research}}
 
 \hypertarget{references}{%
-\section{References}\label{references}}
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\hypertarget{ref-belgium}{}%
+{``{COVID 19 Dashboard -- Belgium}.''} 2022.
+\url{https://esribelux.maps.arcgis.com/apps/ops\%0Adashboard/index.html\#/e350724c87af49bb9ce29646f8a42344}.
+
+\leavevmode\hypertarget{ref-indiadash}{}%
+{``{COVID 19 Dashboard India -- ZOHO Analytics -- ZOHO}.''} 2022.
+\url{https://www.zoho.com/covid/india/}.
+
+\leavevmode\hypertarget{ref-nhs}{}%
+{``{COVID 19 Dashboard -- NHS providers}.''} 2022.
+\url{https://nhsproviders.org/topics/covid-\%0A19/tracking-covid-19-data/covid-19-dashboard}.
+
+\leavevmode\hypertarget{ref-italy}{}%
+{``{COVID-19 integrated surveillance data in Italy -- EpiCentro}.''}
+2022.
+\url{https://www.ep\%0Aicentro.iss.it/en/coronavirus/sars-cov-2-dashboard}.
+
+\leavevmode\hypertarget{ref-sl}{}%
+{``{COVID-19: Live situational Analysis Dashboard of Sri Lanka,}''}
+2022. \url{https:\%0A//hpb.health.gov.lk/covid19-dashboard/}.
+
+\end{CSLReferences}
 
 \end{document}

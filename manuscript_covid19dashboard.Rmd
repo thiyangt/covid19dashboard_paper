@@ -44,7 +44,27 @@ Dashboards are one of the greatest visual interpretation methods for tracking th
 
 # Literature Review
 
-The 15 dashboards we used in the study are listed below (Table 1).
+Initially 15 dashboards were compared  to determine which data types are most frequently shown in dashboards. The 15 dashboards we used in the study are listed below (Table 1).
+
+**Table 01: Labeled of the Dashboards**
+
+|No |Name of the Dashboard|Reference|
+|:--:|:-------------------|------|
+|1 | COVID-19 dashboard created by the John Hopkins University Center for Systems Science & Engineering (JHU CSSE) ||
+|2 | WHO  COVID-19 Dashboard ||
+|3 | COVID-19 surveillance dashboard created by the University of Virginia ||
+|4 | Corona cases (COVID-19) per municipality in Belgium dashboard |@belgium|
+|5 | COVID-19 dashboard for England created by NHS providers |@nhs|
+|6 | NZ COVID-19 Dashboard ||
+|7 | Pakistan’s official COVID-19 dashboard ||
+|8 | COVID-19 Canada live dashboard ||
+|9 | India (COVID-19) Dashboard | @indiadash |
+|10 | Italy COVID-19 dashboard |@italy|
+|11 | Jamaica COVID-19 Dashboard ||
+|12 | GCI COVID-19 dashboard for Russia ||
+|13 | COVID-19 live situation analysis dashboard of Sri Lanka |@sl|
+|14 | COVID 19 ZA South Africa Dashboard ||
+|15 | COVID-19 dashboard for Germany ||
 
 
 
