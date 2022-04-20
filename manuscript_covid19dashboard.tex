@@ -1,0 +1,222 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Interactive dashboard to monitor the COVID-19 outbreak},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Interactive dashboard to monitor the COVID-19 outbreak}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+\textbf{Thiyanga S. Talagala}\footnote{Corresponding author, email:
+  \href{mailto:ttalagala@gmail.com}{\nolinkurl{ttalagala@gmail.com}}}
+
+Department of Statistics
+
+Faculty of Applied Sciences
+
+University of Sri Jayewardenepura, Sri Lanka, CO10230
+
+\hspace{3cm}
+
+\textbf{Randi Shashikala}
+
+Department of Statistics, Faculty of Applied Sciences
+
+University of Sri Jayewardenepura, Sri Lanka, CO 10230
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+As of September 20th, 2021, 221 countries and territories are infected
+by the COVID-19 worldwide pandemic. Dashboards are the most often used
+visualization method for visualizing COVID-19 data and informing the
+public. The main objective of this study is to identify different
+features, visualization methods \& improvements that should be occurred
+by exploring the existing dashboards and to develop a dashbored to
+visualize COVID-19 outbreak in Sri Lanka. We explored 15 different
+dashboards. The most commonly used visualization methods in dashboard
+development are bar charts, line charts, and interactive maps.
+Dashboards that fit on a single screen are preferable than others.
+
+\textbf{Keywords:} Visualization, multiple time series, heatmap,
+COVID-19 vaccine, flexdashboard
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+The COVID-19 pandemic is a global coronavirus illness outbreak that
+began in 2019 and is being caused by the Severe Acute Respiratory
+Syndrome Coronavirus 2 (SARS-CoV-2) virus. In December 2019, the first
+COVID-19-infected patient was discovered in Wuhan, China. According to
+Worldmeter data, there were 229835231 confirmed cases, 206515718
+recovered cases, 18605877 active cases, and 4713636 deaths worldwide as
+of September 20, 2021. Currently, 99.5 percent of active patients are in
+a mild state, while 0.5 percent are in a critical state.
+
+Dashboards are one of the greatest visual interpretation methods for
+tracking the COVID-19 pandemic's spread and communication. There are a
+plethora of COVID-19 visualization dashboards that have been designed to
+visualize the pandemic's global and local status. Different software can
+be used to generate dashboards. We explored 15 dashboards designed to
+visualize COVID-19 data in the global and country levels. First,
+dashboards were compared to identify the various features, visualization
+approaches, and enhancements that should be implemented. Next, we
+developed an interactive dashboard to visualized COVID-19 outbreak in
+Sri Lanka.
+
+\hypertarget{literature-review}{%
+\section{Literature Review}\label{literature-review}}
+
+The 15 dashboards we used in the study are listed below (Table 1).
+
+\hypertarget{methodology}{%
+\section{Methodology}\label{methodology}}
+
+\newpage
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+The ``Sri Lanka COVID-19 Dashboard'' provides an overview of the
+COVID-19 pandemic for Sri Lanka. This dashboard has eight panels as
+follows.
+
+\textbf{Table 01: Description of the panels}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.13}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.87}}@{}}
+\toprule
+\textbf{Name of the Panel} & \textbf{Description of the Panel} \\
+\midrule
+\endhead
+Overview & Total count of COVID-19 confirmed, recovered, deaths, active
+cases \& total vaccine doses administered.\hfill\break Provide an
+overview of daily COVID-19 confirmed, recovered \& deaths by
+plots.\hfill\break \\
+Cases by Wave & There are three tabs in this panel.\hfill\break  * Total
+COVID-19 confirmed cases - Cumulative count of COVID-19 confirmed cases
+with specific dates\hfill\break * COVID-19 Cases Distribution by Wave -
+Daily confirmed cases by wave\hfill\break * COVID-19 Deaths Distribution
+by Wave - Daily deaths by wave\hfill\break \\
+COVID-19 Patients Distribution & Provide an overview of confirmed cases
+district wise distribution. There are four tabs in this
+panel.\hfill\break * Total COVID-19 Patients Distribution in Sri Lanka -
+Total confirmed counts for each district is represented by tree
+map\hfill\break * Country Map - Total confirmed cases in each district
+represented by Sri Lanka country map\hfill\break * Distribution of Daily
+COVID-19 Patients for Last 30 Days - Visualize the daily confirmed cases
+distribution by districts in last 30 days\hfill\break * By Applying
+Min-Max Transformation - Visualize the details in the third tab by
+applying min-max transformation for each district\hfill\break \\
+Vaccination Details & Provide an overview of COVID-19 vaccination in Sri
+Lanka. There are two tabs.\hfill\break * Total Vaccine Doses - Visualize
+the administered vaccine doses as first dose only \& fully
+vaccinated\hfill\break * Total Administered Doses by Vaccine Name -
+Visualize the vaccination by vaccine names\hfill\break \\
+Top 10 Countries & In this panel, compare the Sri Lanka confirmed \&
+deaths with top 10 countries in the world (top 10 countries - The
+countries which have been reported highest number of confirmed cases as
+31st of August 2021).\hfill\break There are two
+tabs.\hfill\break * Comparison of Cumulative Cases in Sri Lanka with Top
+10 Countries - Compare the confirmed and deaths in Sri Lanka with top 10
+countries by cumulative time series plots\hfill\break * Comparison of
+Log of Cumulative Cases in Sri Lanka with Top 10 Countries - Compare the
+confirmed and deaths in Sri Lanka with top 10 countries by log
+cumulative time series plots\hfill\break (The data has been pulled from
+WHO)\hfill\break \\
+Global Comparison & Compare the total confirmed \& deaths in Sri lanka
+with top 10 countries in Global \& Asia. There are two
+tabs.\hfill\break * Comparison of the sri Lanka with Top 10 Countries
+Reporting the Most COVID-19 Cases in the World - Compare the total
+confirmed \& deaths in Sri Lanka with top 10 countries in the world \&
+compare the case fatality ratios\hfill\break * Comparison of the sri
+Lanka with Top 10 Countries Reporting the Most COVID-19 Cases in the
+Asia - Compare the total confirmed \& deaths in Sri Lanka with top 10
+countries in the Asia \& compare the case fatality ratios\hfill\break \\
+Global Map & Visualize the distribution of confirmed, recovered \&
+deaths in the world by world map.\hfill\break \\
+About & This panel contains the details about the dashboard. \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{discussion-and-further-research}{%
+\section{Discussion and Further
+research}\label{discussion-and-further-research}}
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\end{document}
