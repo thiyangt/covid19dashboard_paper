@@ -67,7 +67,7 @@
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\setcounter{secnumdepth}{5}
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -102,9 +102,7 @@
 \textbf{Thiyanga S. Talagala}\footnote{Corresponding author, email:
   \href{mailto:ttalagala@gmail.com}{\nolinkurl{ttalagala@gmail.com}}}
 
-Department of Statistics
-
-Faculty of Applied Sciences
+Department of Statistics, Faculty of Applied Sciences
 
 University of Sri Jayewardenepura, Sri Lanka, CO10230
 
@@ -116,8 +114,7 @@ Department of Statistics, Faculty of Applied Sciences
 
 University of Sri Jayewardenepura, Sri Lanka, CO 10230
 
-\hypertarget{abstract}{%
-\section{Abstract}\label{abstract}}
+\textbf{Abstract}
 
 As of September 20th, 2021, 221 countries and territories are infected
 by the COVID-19 worldwide pandemic. Dashboards are the most often used
@@ -174,30 +171,256 @@ No & Name of the Dashboard & Reference \\
 \midrule
 \endhead
 1 & COVID-19 dashboard created by the John Hopkins University Center for
-Systems Science \& Engineering (JHU CSSE) & \\
-2 & WHO COVID-19 Dashboard & \\
+Systems Science \& Engineering (JHU CSSE) & {``{COVID-19 Map -- Johns
+Hopkins Coronavirus Resource Center}''} (2022) \\
+2 & WHO COVID-19 Dashboard & {``{WHO Coronavirus (COVID-19)
+Dashboard}''} (2021) \\
 3 & COVID-19 surveillance dashboard created by the University of
-Virginia & \\
+Virginia & {``{COVID-19 Surveillance Dashboard -- NSSAC Research}''}
+(2022) \\
 4 & Corona cases (COVID-19) per municipality in Belgium dashboard &
 {``{COVID 19 Dashboard -- Belgium}''} (2022) \\
 5 & COVID-19 dashboard for England created by NHS providers & {``{COVID
 19 Dashboard -- NHS providers}''} (2022) \\
-6 & NZ COVID-19 Dashboard & \\
-7 & Pakistan's official COVID-19 dashboard & \\
-8 & COVID-19 Canada live dashboard & \\
+6 & NZ COVID-19 Dashboard & {``{New Zealand COVID-19 Surveillance
+Dashboard}''} (2021) \\
+7 & Pakistan's official COVID-19 dashboard & {``{Pakistan's Official
+COVID-19 Dashboard -- Shifa International Hospitals Ltd}''} (2021) \\
+8 & COVID-19 Canada live dashboard & {``{Track COVID-19 Across Canada
+Using Our Interactive Dashboards}''} (2021) \\
 9 & India (COVID-19) Dashboard & {``{COVID 19 Dashboard India -- ZOHO
 Analytics -- ZOHO}''} (2022) \\
 10 & Italy COVID-19 dashboard & {``{COVID-19 integrated surveillance
 data in Italy -- EpiCentro}''} (2022) \\
-11 & Jamaica COVID-19 Dashboard & \\
-12 & GCI COVID-19 dashboard for Russia & \\
+11 & Jamaica COVID-19 Dashboard & {``{COVID-19 Jamaica - Ministry of
+Health and Wellness}''} (2021) \\
+12 & GCI COVID-19 dashboard for Russia & {``{The Global COVId-19 Index
+(GCI) -- Russia Dashboard -- PEMANDU Associates}''} (2021) \\
 13 & COVID-19 live situation analysis dashboard of Sri Lanka &
-{``{COVID-19: Live situational Analysis Dashboard of Sri Lanka,}''}
+{``{COVID-19: Live situational Analysis Dashboard of Sri Lanka}''}
 (2022) \\
-14 & COVID 19 ZA South Africa Dashboard & \\
-15 & COVID-19 dashboard for Germany & \\
+14 & COVID 19 ZA South Africa Dashboard & {``{COVID-19 ZA Dashboard -
+Data Studio}''} (2021) \\
+15 & COVID-19 dashboard for Germany & {``{RKI COVID-19 Germany -- ArcGIS
+Experience}''} (2021) \\
 \bottomrule
 \end{longtable}
+
+\hypertarget{summary-of-data-representation-on-dashboards}{%
+\subsubsection{Summary of data representation on
+dashboards}\label{summary-of-data-representation-on-dashboards}}
+
+\textbf{Table 02: Summary of data represent in the dashboards}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.13}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.12}}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.13}}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.13}}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.13}}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.13}}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.13}}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.13}}@{}}
+\toprule
+Name of the Dashboard & Location (Represented) & Confirmed Cases &
+Recovered Cases & Deaths & Vaccination Details & Tests & Global
+Comparison \\
+\midrule
+\endhead
+1 & Global & \checkmark & \checkmark & \checkmark & \checkmark & &
+\checkmark \\
+2 & Global & \checkmark & \checkmark & \checkmark & \checkmark & &
+\checkmark \\
+3 & Global & \checkmark & \checkmark & \checkmark & & \checkmark & \\
+4 & Belgium & \checkmark & \checkmark & \checkmark & & & \\
+5 & England & \checkmark & \checkmark & \checkmark & \checkmark & & \\
+6 & New Zealand & \checkmark & \checkmark & \checkmark & & &
+\checkmark \\
+7 & Pakistan & \checkmark & \checkmark & \checkmark & & \checkmark & \\
+8 & Canada & \checkmark & \checkmark & \checkmark & & & \\
+9 & India & \checkmark & \checkmark & \checkmark & \checkmark & &
+\checkmark \\
+10 & Italy & \checkmark & \checkmark & \checkmark & & \checkmark & \\
+11 & Jamaica & \checkmark & \checkmark & \checkmark & \checkmark & & \\
+12 & Russia & \checkmark & \checkmark & \checkmark & & & \\
+13 & Sri Lanka & \checkmark & \checkmark & \checkmark & & \checkmark &
+\checkmark \\
+14 & South Africa & \checkmark & \checkmark & \checkmark & \checkmark &
+\checkmark & \\
+15 & German & \checkmark & \checkmark & \checkmark & \checkmark & & \\
+\bottomrule
+\end{longtable}
+
+As shown in table 02 all dashboards which are considered in this paper
+represent the data related to COVID-19 confirmed cases, recovered cases
+\& deaths. There have been contained vaccination details, 8 dashboards
+out of 15 dashboards. In almost each \& every dashboard, value boxes
+have been used to represent these total figures. Bar charts \& line
+charts (trend lines) are most frequently used to visualize these data
+(confirmed cases, recovered cases, deaths \& vaccination details) with
+respect to time. A Majority of dashboards presented data by daily or
+weekly. The mapping is used to track the spatial distribution of
+COVID-19 cases by country/ provincial/ regional etc. When visualizing
+the data by map color code system \& circles with respect to the size of
+the cases have been used to visualize the variation in size. The
+considerable number of dashboards has been used doughnut shape pie
+charts to represent total COVID-19 confirmed cases, recovered cases,
+active cases \& deaths as a percentage. Also, region, gender, age group
+\& ethnicity can be identified as common breakdowns of COVID-19 cases.
+In some dashboard has been added data tables for representing cases
+distribution by province/region. Only very few dashboards have been
+visualized in COVID-19 test details. Only 6 dashboards have been
+compared to global situations. In addition, fatality rate, incidence
+rate, ICU beds, stage of the patients \& hospitalize details have been
+contained in the several dashboards. These are the most common data
+types that have been contained in the dashboards. The main tools that
+have been used for different purpose can be shown in the following
+table.\hfill\break
+
+\textbf{Table 03: Summary of tools which are used for different purpose}
+
+\begin{longtable}[]{@{}lccccccc@{}}
+\toprule
+Purpose & Bar chart & Line chart & Pie chart & Dot plot & Heat map &
+Mapping & Data table \\
+\midrule
+\endhead
+COVID-19 confirmed & & & & & & & \\
+cases & \checkmark & \checkmark & & \checkmark & & \checkmark &
+\checkmark \\
+COVID-19 deaths & \checkmark & \checkmark & & & & \checkmark &
+\checkmark \\
+COVID-19 recovered & & & & & & & \\
+cases & \checkmark & \checkmark & & & & \checkmark & \checkmark \\
+COVID-19 vaccination & & \checkmark & & & & \checkmark & \checkmark \\
+COVID-19 test & & & & & & & \\
+conducted & \checkmark & \checkmark & & & & & \\
+Clinical status & \checkmark & & & & & & \\
+Cases distribution by & & & & & & & \\
+age & \checkmark & & \checkmark & & & & \\
+Cases distribution by & & & & & & & \\
+gender & \checkmark & & & & & & \\
+Cases distribution by area & & & & & & & \\
+(Province/state/region) & \checkmark & \checkmark & & & \checkmark &
+\checkmark & \checkmark \\
+To compare the cases & & & \checkmark & & & & \checkmark \\
+Global comparison & \checkmark & \checkmark & & & & \checkmark &
+\checkmark \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{comparison-of-dashboards}{%
+\subsubsection{2.2 Comparison of
+Dashboards}\label{comparison-of-dashboards}}
+
+Before developing a dashboard, it is necessary to think about which
+visualization tools \& features that should be contained in the
+dashboards. What are the most suitable plots, how many panels in the
+dashboard, what data should be included, how to fit dashboard on a
+screen, colors \& is it real time updated or not are the common things
+that should be considered before develop the dashboards. In table 02 has
+been compared these visualization tools \& features under the following
+categories.
+
+\begin{itemize}
+\tightlist
+\item
+  Number of panels - How many panels which are included in the
+  dashboard.
+\item
+  Visualization tools -- what are the graphical representations of data
+  which are contained in the dashboards.
+\item
+  Fitted on a single screen -- whether the dashboard fits on a single
+  screen or not (users can see the whole dashboard on a single screen
+  without adjusting through grid overlay or not).
+\item
+  Color theme -- is there a unique color used for one data type in the
+  whole dashboard (i.e.: one color scale for one data type everywhere on
+  the dashboard).
+\item
+  Dark background -- background color of the dashboard is dark or light.
+\item
+  Data available -- whether users can be downloaded/available the data
+  set which has been visualized on the dashboard.
+\item
+  Real time updated -- whether the dashboard is updated daily/ specific
+  time (live dashboard) or not.
+\end{itemize}
+
+\textbf{Table 04: Comparison of visualization tools \& features of
+dashboard}
+
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.12}}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.12}}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.12}}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.12}}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.12}}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.12}}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.12}}
+  >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.12}}@{}}
+\toprule
+Name of the Dashboard & Number of panels & Visualization tools & Fitted
+on a single screen & Color theme & Dark background & Data available &
+Real time updated \\
+\midrule
+\endhead
+1 & 1 & Bar chart\hfill\break  Interactive map\hfill\break & \checkmark
+& \checkmark & \checkmark & \checkmark & \checkmark \\
+2 & 4 & Line chart\hfill\break  Interactive map\hfill\break  Data
+table\hfill\break & & \checkmark & & \checkmark & \checkmark \\
+3 & 2 & Line chart\hfill\break  Bar chart\hfill\break Interactive
+map\hfill\break Data table\hfill\break & \checkmark & \checkmark &
+\checkmark & \checkmark & \checkmark \\
+4 & 1 & Line chart\hfill\break Bar chart\hfill\break  Pie
+chart\hfill\break Interactive map\hfill\break & \checkmark & &
+\checkmark & \checkmark & \checkmark \\
+5 & 1 & Line chart\hfill\break Bar chart\hfill\break Data
+table\hfill\break & & \checkmark & & \checkmark & \checkmark \\
+6 & 5 & Line chart\hfill\break Bar chart\hfill\break Dot
+plot\hfill\break  Interactive country map\hfill\break & & & & \checkmark
+& \checkmark \\
+7 & 1 & Line chart\hfill\break Bar chart\hfill\break  Country
+map\hfill\break Data table\hfill\break & & \checkmark & & &
+\checkmark \\
+8 & 3 & Line chart\hfill\break Bar chart\hfill\break Data
+table\hfill\break Interactive map\hfill\break & & & \checkmark & &
+\checkmark \\
+9 & 3 & Line chart\hfill\break Bar chart\hfill\break Doughnut shape pie
+chart\hfill\break Data table\hfill\break Interactive country
+map\hfill\break & & \checkmark & & \checkmark & \checkmark \\
+10 & 2 & Bar chart\hfill\break Doughnut shape pie chart\hfill\break Heat
+map\hfill\break Interactive country map\hfill\break & & & & &
+\checkmark \\
+11 & 1 & Line chart\hfill\break Bar chart\hfill\break Doughnut shape pie
+chart\hfill\break Data table\hfill\break Interactive country
+map\hfill\break & & \checkmark & & & \checkmark \\
+12 & 1 & Line chart\hfill\break Bar chart\hfill\break  Interactive
+map\hfill\break & & \checkmark & \checkmark & & \checkmark \\
+13 & 1 & Line chart\hfill\break Bar chart\hfill\break Doughnut shape pie
+chart\hfill\break & & \checkmark & & & \checkmark \\
+14 & 2 & Line chart\hfill\break Bar chart\hfill\break  Interactive
+Country map\hfill\break & & \checkmark & & \checkmark & \checkmark \\
+15 & 1 & Line chart\hfill\break Bar chart\hfill\break  Data
+table\hfill\break Interactive map\hfill\break & \checkmark & \checkmark
+& \checkmark & & \checkmark \\
+\bottomrule
+\end{longtable}
+
+As shown in table 04 almost each \& every dashboard, line charts \& bar
+charts have been used to visualize the data. Heat map \& dot plot has
+been used only one dashboard. Only four dashboards have been fitted with
+a single screen. The majority of dashboards have used color theme on the
+whole dashboard. That is, dashboards have been applied different colors
+for different type of data (i.e.~One specific color for confirmed cases,
+another color for deaths, etc.) in the whole dashboard. The data set \&
+related links have available on some dashboards \& users can download
+these data sets. There are 6 dashboards with dark background while
+others have been used light background. Last updated time \& date of the
+latest available data has been reported at the top or bottom of the
+first panel in the dashboard. Like, half of dashboards included all data
+in one panel.
 
 \hypertarget{methodology}{%
 \section{Methodology}\label{methodology}}
@@ -211,7 +434,7 @@ The ``Sri Lanka COVID-19 Dashboard'' provides an overview of the
 COVID-19 pandemic for Sri Lanka. This dashboard has eight panels as
 follows.
 
-\textbf{Table 01: Description of the panels}
+\textbf{Table 05: Description of the panels}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.13}}
@@ -274,6 +497,231 @@ About & This panel contains the details about the dashboard. \\
 \section{Discussion and Further
 research}\label{discussion-and-further-research}}
 
+Bar charts \& line charts are the most frequently used tools for the
+visualization of total cases, daily cases \& comparisons with respect to
+time. Some dashboards contained doughnut shape pie charts to summarize
+the total figures. In almost each and every dashboard, value boxes have
+been used to represent total figures. Some dashboards contained
+interactive maps \& data tables to visualize the distribution of cases
+by country, province, region or state. All dashboards are daily updating
+real time dashboards. Gender, age groups and ethnicity can be identified
+as common breakdowns. The data sets \& related links are available on
+most of the dashboards \& can be downloaded. It can be seen that it is
+very easy, clear and user friendly to identify confirmed, recovered and
+deceased cases in dashboards which include one color theme for the whole
+dashboard. Dashboards with the dark background are more comfortable to
+the eyes than dashboards with light background \& light colors. Also, it
+is better if the dashboard can be fitted on a single screen rather than
+adjusting through a grid overlay.
+
+\hypertarget{appendix-overview-of-reviewed-dashboard}{%
+\section{Appendix: Overview of reviewed
+dashboard}\label{appendix-overview-of-reviewed-dashboard}}
+
+Real time updated COVID-19 dashboard created by the John Hopkins
+University Center for Systems Science \& Engineering (JHU CSSE) has
+included total confirmed cases \& total deaths by country,
+province/region/state (not for all countries){[}6{]}. Weekly \& daily
+global confirmed cases, deaths \& vaccine doses have been visualized
+using bar plots related to the date in the side panels. Also, an
+interactive world map has included in the dashboard to represent total
+confirmed cases, incidence rate, fatality ratio \& vaccine doses
+administered by country \& state of US. All the links related to the
+data sets has been included in the dashboard. In this dashboard red,
+white, green colors has been used to indicate confirmed cases, deaths \&
+vaccine doses respectively. The dashboard has fitted on a single screen.
+
+\begin{figure}
+\includegraphics[width=8.42in]{Images/1} \caption{Johns Hopkins University COVID-19 Dashboard}\label{fig:unnamed-chunk-1}
+\end{figure}
+
+Live updated ``WHO COVID-19 dashboard'' contained four panels. The
+interactive world map in the dashboard has visualized the distribution
+of COVID-19 confirmed cases, deaths \& vaccination by country {[}15{]}.
+Line chart \& bar charts have been used as visualization plots. Blue,
+red, green colors have been used to represent confirmed cases, deaths \&
+vaccination respectively. The links related to the underlying data was
+available in the dashboard. The dashboard was not fitted on a single
+screen.
+
+\begin{figure}
+\includegraphics[width=8.35in]{Images/2} \caption{WHO COVID-19 Dashboard}\label{fig:unnamed-chunk-2}
+\end{figure}
+
+The ``COVID-19 surveillance dashboard'' created by the University of
+Virginia in collaboration with Bio complexity Institute has included
+interactive world map with a time slide to visualize the confirmed
+cases, recovered cases, deaths, active cases \& vaccine details {[}7{]}.
+Line charts, bar charts \& data tables have been visualized in the
+dashboard. Red, blue, green \& yellow colors have been used to identify
+confirmed, deceased, recovered \& active cases respectively. The data
+behind the dashboard also available on the dashboard \& can be
+downloaded. The dashboard has fitted on a single screen.
+
+\begin{figure}
+\includegraphics[width=8.42in]{Images/3} \caption{COVID-19 Surveillance Dashboard}\label{fig:unnamed-chunk-3}
+\end{figure}
+
+Corona cases (COVID-19) per municipality in Belgium dashboard has
+included interactive map for distribution of total confirmed cases per
+municipality, bar chart for number of cases per province, line charts
+for number of cases per day by region \& municipality, dodge bar chart
+for deaths per region, per age \& pie chart for deaths per age as
+visualization methods{[}3{]}. Also it included several value boxes for
+total cases, total deaths \& hospital situations. There was no specific
+color theme used in this dashboard. This dashboard also fitted on a
+single screen.
+
+\begin{figure}
+\includegraphics[width=8.39in]{Images/4} \caption{Corona cases per Municipality in Belgium Dashboard}\label{fig:unnamed-chunk-4}
+\end{figure}
+
+The COVID-19 dashboard for England created by NHS providers included
+daily totals, daily changes \& weekly changes in new cases, hospital
+admission, patients in hospital, and patients in ICU beds, deaths \&
+vaccinations in England as counts {[}2{]}. Bar plots for daily new
+cases, hospital admissions \& deaths for last 30 days have been added in
+this dashboard. Also it has included data table for total count, daily
+changes (as increase or decrease), weekly changes (as increase or
+decrease) of new cases \& hospital admission by region. It can be seen
+that, three different colors have been used in bar plot as orange for
+new cases, green for hospital admissions \& red for deaths. These plots
+were not interactive plots \& there was only one panel. The dashboard
+was not fitted on a single screen.
+
+\begin{figure}
+\includegraphics[width=8.46in]{Images/5} \caption{COVID-19 dashboard for England}\label{fig:unnamed-chunk-5}
+\end{figure}
+
+The Environmental Science and Research Institute COVID-19 dashboard for
+New Zealand (was developed \& is maintained in collaboration with
+Epi-interactive Ltd) contained five panels as overview, outbreak,
+source, international \& ESR reports {[}10{]}. In this real time updated
+dashboard, they have included value boxes for total confirmed cases,
+recovered cases, deaths \& interactive map has been added for
+distribution of confirmed \& probable cases as incidence \& count. Also
+they have included bar charts for confirmed cases distribution by
+gender, age group, \& line charts for confirmed \& deaths as daily \&
+cumulative. The dashboard has not fitted on a single screen.
+
+\begin{figure}
+\includegraphics[width=8.47in]{Images/6} \caption{New Zealand COVID-19 Dashboard}\label{fig:unnamed-chunk-6}
+\end{figure}
+
+Pakistan's official COVID-19 dashboard is a real time updated dashboard
+with one panel. This dashboard contains value boxes for total confirmed
+cases, active cases, deaths, recovered cases by country. Province wise
+cases have been represented by map \& data table {[}11{]}. Line charts
+\& bar charts have been added to visualize the distribution of cases
+related to time \& province. In the value boxes blue, orange, pink \&
+green colors have been applied for confirmed cases, active cases, deaths
+\& recoveries respectively, but there was no specific color theme used
+when plotting the graphs. The dashboard cannot be seen on a single
+screen without grid overlay.
+
+\begin{figure}
+\includegraphics[width=8.33in]{Images/7} \caption{COVID-19 Dashboard for Pakistan}\label{fig:unnamed-chunk-7}
+\end{figure}
+
+COVID-19 Canada live dashboard has been developed with three panels for
+provincial data, hospital resources \& projections {[}14{]}. This
+dashboard contained interactive map for represented total reported cases
+\& deaths by province. Data tables, line charts, bar charts were the
+most frequently used visualization types of this dashboard. More details
+were presented on this dashboard by province like ventilator counts,
+hospital beds per 100 residents, resource capacity based on critical
+case rate, effect of social distance, forecast of deaths \& cases. There
+was no specific color theme applied for plotting the graphs. The
+dashboard also was not fitted on a single screen.
+
+\begin{figure}
+\includegraphics[width=8.47in]{Images/8} \caption{COVID-19 in Canada dashboard}\label{fig:unnamed-chunk-8}
+\end{figure}
+
+``Zoho analytics COVID-19 live dashboard'' for India contained three
+panels as insight by state, trend analysis \& vaccination {[}1{]}.
+Interactive country map has been used to visualize the distribution of
+confirmed cases, active cases, deaths, recovered cases \& vaccination by
+states in India. Line charts, bar charts \& doughnut shape pie charts
+have been used as other visualization tools. Also this dashboard
+contained data table for overview of COVID-19 in India. This dashboard
+also was not fitted on a single screen.
+
+\begin{figure}
+\includegraphics[width=8.42in]{Images/9} \caption{India COVID-19 Dashboard}\label{fig:unnamed-chunk-9}
+\end{figure}
+
+Italy COVID-19 dashboard created by the COVID-19 task force of the
+department of infection diseases and the IT service Istituto Superiore
+Sanita, contained interactive map, bar charts, doughnut shape pie charts
+\& heat maps as visualization tools {[}4{]}. It provides data related to
+COVID-19 cases, cases distribution by age, clinical status, and weekly
+number of cases notified in Italy by region/province. This dashboard
+also was not fitted on a single screen.
+
+\begin{figure}
+\includegraphics[width=8.12in]{Images/10} \caption{Italy COVID-19 Dashboard}\label{fig:unnamed-chunk-10}
+\end{figure}
+
+Live COVID-19 dashboard developed \& contributed by an amber innovations
+for the government of Jamaica has added interactive country map \& data
+table to represent the COVID- 19 cases by parish {[}9{]}. Line charts \&
+bar charts have been added to the dashboard for cumulative \& daily
+COVID-19 cases. Yellow, green \& red colors have been used to represent
+confirmed, recovered \& deaths respectively. Doughnut shape pie chart
+has been added to represent the distribution of recovered, confirmed \&
+deaths by age group. This dashboard was not fitted on a single screen.
+
+\begin{figure}
+\includegraphics[width=8.35in]{Images/11} \caption{Jamaica COVID-19 Dashboard}\label{fig:unnamed-chunk-11}
+\end{figure}
+
+The GCI COVID-19 dashboard for Russia includes an interactive map, bar
+charts \& line charts to visualize the COVID-19 data {[}13{]}. Yellow,
+green, red \& blue colors have been added to identify the confirmed,
+recovered, deaths \& active case respectively in plotting the charts.
+
+\begin{figure}
+\includegraphics[width=8.25in]{Images/12} \caption{GCI COVID-19 Dashboard for Russia}\label{fig:unnamed-chunk-12}
+\end{figure}
+
+COVID-19 live situation analysis dashboard of Sri Lanka contains total
+\& daily figures in Sri Lanka as counts {[}5{]}. Total cases \& active
+cases have been visualized by using a line chart. Bar charts have been
+used to summarize the daily confirmed cases and recovered cases. As well
+fatality rate, recovery rate \& daily investigations using PCR tests \&
+rapid antigen tests have been compared by using the bar charts. Doughnut
+shape pie chart has been used to summarize the total cases. Blue, green
+\& red colors have been applied to active, recovered \& deaths
+respectively. This dashboard was also not fitted on a single screen.
+
+\begin{figure}
+\includegraphics[width=8.4in]{Images/13} \caption{COVID-19 Live Situational Analysis Dashboard of Sri Lanka}\label{fig:unnamed-chunk-13}
+\end{figure}
+
+COVID-19 live situation analysis dashboard of Sri Lanka contains total
+\& daily figures in Sri Lanka as counts {[}5{]}. Total cases \& active
+cases have been visualized by using a line chart. Bar charts have been
+used to summarize the daily confirmed cases and recovered cases. As well
+fatality rate, recovery rate \& daily investigations using PCR tests \&
+rapid antigen tests have been compared by using the bar charts. Doughnut
+shape pie chart has been used to summarize the total cases. Blue, green
+\& red colors have been applied to active, recovered \& deaths
+respectively. This dashboard was also not fitted on a single screen.
+
+\begin{figure}
+\includegraphics[width=8.46in]{Images/14} \caption{COVID 19 ZA South Africa Dashboard}\label{fig:unnamed-chunk-14}
+\end{figure}
+
+Robert Koch-Institute COVID-19 dashboard for German contains interactive
+map, line charts \& bar charts as visualization tools of COVID-19 data
+{[}12{]}. The dashboard has been fitted on a single screen. This
+dashboard format is similar to the John Hopkins dashboard.
+
+\begin{figure}
+\includegraphics[width=8.33in]{Images/15} \caption{Robert Koch-Institute COVID-19 dashboard for German}\label{fig:unnamed-chunk-15}
+\end{figure}
+
 \hypertarget{references}{%
 \section*{References}\label{references}}
 \addcontentsline{toc}{section}{References}
@@ -297,9 +745,51 @@ research}\label{discussion-and-further-research}}
 2022.
 \url{https://www.ep\%0Aicentro.iss.it/en/coronavirus/sars-cov-2-dashboard}.
 
+\leavevmode\hypertarget{ref-jamaica}{}%
+{``{COVID-19 Jamaica - Ministry of Health and Wellness}.''} 2021.
+\url{https://jamcovid19.moh.gov.jm/}.
+
 \leavevmode\hypertarget{ref-sl}{}%
-{``{COVID-19: Live situational Analysis Dashboard of Sri Lanka,}''}
+{``{COVID-19: Live situational Analysis Dashboard of Sri Lanka}.''}
 2022. \url{https:\%0A//hpb.health.gov.lk/covid19-dashboard/}.
+
+\leavevmode\hypertarget{ref-jh}{}%
+{``{COVID-19 Map -- Johns Hopkins Coronavirus Resource Center}.''} 2022.
+\url{https://coronavi\%0Arus.jhu.edu/map.html}.
+
+\leavevmode\hypertarget{ref-nssac}{}%
+{``{COVID-19 Surveillance Dashboard -- NSSAC Research}.''} 2022.
+\url{https://nssac.bii.virg\%0Ainia.edu/covid-19/dashboard/}.
+
+\leavevmode\hypertarget{ref-za}{}%
+{``{COVID-19 ZA Dashboard - Data Studio}.''} 2021.
+\url{https://datastudio.google.com/u/0/\%0Areporting/1b60bdc7-bec7-44c9-ba29-be0e043d8534/page/hrUIB}.
+
+\leavevmode\hypertarget{ref-nz}{}%
+{``{New Zealand COVID-19 Surveillance Dashboard}.''} 2021.
+\url{https://nzcoviddashboard.esr.c\%0Ari.nz/\#!/}.
+
+\leavevmode\hypertarget{ref-pakistan}{}%
+{``{Pakistan's Official COVID-19 Dashboard -- Shifa International
+Hospitals Ltd}.''} 2021.
+\url{https://www.shifa.com.pk/covid-19-pakistan/}.
+
+\leavevmode\hypertarget{ref-rki}{}%
+{``{RKI COVID-19 Germany -- ArcGIS Experience}.''} 2021.
+\url{https://experience.arcgis.co\%0Am/experience/478220a4c454480e823b17327b2bf1d4}.
+
+\leavevmode\hypertarget{ref-russia}{}%
+{``{The Global COVId-19 Index (GCI) -- Russia Dashboard -- PEMANDU
+Associates}.''} 2021. \url{https://covid19.pemandu.org/Russia}.
+
+\leavevmode\hypertarget{ref-canada}{}%
+{``{Track COVID-19 Across Canada Using Our Interactive Dashboards}.''}
+2021.
+\url{https:\%0A//samples.dundas.com/Dashboard/62cef916-5488-4d3b-9c57-204092d01813?e=false\&vo=viewonly}.
+
+\leavevmode\hypertarget{ref-who}{}%
+{``{WHO Coronavirus (COVID-19) Dashboard}.''} 2021.
+\url{https://covid19.who.int/?gcl\%0Aid=CjwKCAjwvuGJBhB1EiwACU1Aia9pAaNLOkBMS2KVlSqXptskt1t46b7_bNv6vpTt_HjvXfrnDSrWxoCE3sQAvD_\%0ABwE}.
 
 \end{CSLReferences}
 
