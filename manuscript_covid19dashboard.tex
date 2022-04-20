@@ -432,23 +432,54 @@ in one panel.
 
 We obtained data from COVID-19 situation reports published by
 Epidemiology Unit, Ministry of Health Sri Lanka. We obtained data
-corresponds to number of death cases, number of reported cases, number
-of recovered cases and COVID-19 vaccinated counts in Sri Lanka. The data
-are made available through an open-source R package covid19srilanka
-(Talagala 2021).
+corresponds to number of death cases, number of hospitalized cases,
+number of recovered cases and COVID-19 vaccinated counts in Sri Lanka.
+The data are made available through an open-source R package
+covid19srilanka (Talagala 2021).
 
 \hypertarget{software}{%
 \subsection{Software}\label{software}}
 
 R software was used for data cleaning and analysis. The flexdashboard
 (Iannone, Allaire, and Borges 2020) package was used to build the data
-visualization dashboard.
+visualization dashboard. The initial layout for the dashboard was
+prepared based on Krispin (2021).
 
 \hypertarget{data-visualization}{%
 \subsection{Data visualization}\label{data-visualization}}
 
-Inorder, to compare patterns across districts min-max transformation is
-used to normalize data into 0-1 scale.
+Table 5 provides an overview of methods that have been used to visualize
+data.
+
+\textbf{Table 5: Data visualization approaches used to visualize data}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.54}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.46}}@{}}
+\toprule
+\textbf{Data} & \textbf{Type of graphics} \\
+\midrule
+\endhead
+Daily COVID-19 confirmed & Time series plots \hfill\break \\
+Daily COVID-19 recovered cases by time & Time series plots
+\hfill\break \\
+Daily COVID-19 death cases by time & Time series plots \hfill\break \\
+Total COVID-19 confirmed cases by time and wave & Time series plots
+annotated with vertical lines to denote significant milestones
+\hfill\break \\
+Total COVID-19 death cases by time and wave & Histogram \hfill\break \\
+Distribution of COVID-19 patients by districts & Tile map, Choropleth
+maps, Dorling Cartogram, heatmaps \hfill\break \\
+Total vaccination by first dose and second dose & Time series plot
+\hfill\break \\
+Total administrated does by vaccine name & Stacked bar chart
+\hfill\break \\
+Total administrated does by vaccine name & Stacked bar chart
+\hfill\break \\
+Total administrated does by vaccine name & Stacked bar chart
+\hfill\break \\
+\bottomrule
+\end{longtable}
 
 \newpage
 
@@ -459,7 +490,7 @@ The ``Sri Lanka COVID-19 Dashboard'' provides an overview of the
 COVID-19 pandemic for Sri Lanka. This dashboard has eight panels as
 follows.
 
-\textbf{Table 05: Description of the panels}
+\textbf{Table 6: Description of the panels}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.13}}
@@ -517,6 +548,9 @@ deaths in the world by world map.\hfill\break \\
 About & This panel contains the details about the dashboard. \\
 \bottomrule
 \end{longtable}
+
+Inorder, to compare patterns across districts min-max transformation is
+used to normalize data into 0-1 scale.
 
 \hypertarget{discussion-and-further-research}{%
 \section{Discussion and Further
@@ -794,6 +828,10 @@ dashboard format is similar to the John Hopkins dashboard.
 Iannone, Richard, JJ Allaire, and Barbara Borges. 2020.
 \emph{Flexdashboard: R Markdown Format for Flexible Dashboards}.
 \url{https://CRAN.R-project.org/package=flexdashboard}.
+
+\leavevmode\hypertarget{ref-rami}{}%
+Krispin, Rami. 2021. {``{The Coronavirus Dashboard}.''}
+\url{https://github.com/RamiKrispin/coronavirus_dashboard}.
 
 \leavevmode\hypertarget{ref-nz}{}%
 {``{New Zealand COVID-19 Surveillance Dashboard}.''} 2021.
