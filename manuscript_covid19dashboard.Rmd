@@ -40,10 +40,10 @@ As of September 20th, 2021, 221 countries and territories are infected by the CO
 
 COVID-19 has expanded over the globe, having a significant impact on our daily lives and work. In the fight against COVID-19, early responses and timely decisions and actions are critical to save communities and economy worldwide. In order to make effective decisions, data is essential. Data-driven information gide the decision-making process and also evaluate the effectiveness of strategies taken.
 
-In the response to the COVID-19 pandemic, massive amounts of data are being generated. Given such available data, it is critical to create tools for exploratory analysis for policymakers, health officials, and the general public.
+In the response to the COVID-19 pandemic, massive amounts of data are being generated. Given such available data, it is critical to create tools for exploratory analysis for policymakers, health officials, and the general public. Dashboards are one of the greatest visual interpretation methods for tracking the COVID-19 pandemic's spread and communication. The main purpose of this research is to create a dashboard to visualize COVID-19 data in Sri Lanka. Our 
 
 
-Dashboards are one of the greatest visual interpretation methods for tracking the COVID-19 pandemic's spread and communication. There are a plethora of COVID-19 visualization dashboards that have been designed to visualize the pandemic's global and local status. Different software can be used to generate dashboards. We explored 15 dashboards designed to visualize COVID-19 data in the global and country levels. First, dashboards were compared to identify the various features, visualization approaches, and enhancements that should be implemented. Next, we developed an interactive dashboard to visualized COVID-19 outbreak in Sri Lanka.
+There are a plethora of COVID-19 visualization dashboards that have been designed to visualize the pandemic's global and local status. Different software can be used to generate dashboards. We explored 15 dashboards designed to visualize COVID-19 data in the global and country levels. First, dashboards were compared to identify the various features, visualization approaches, and enhancements that should be implemented. Next, we developed an interactive dashboard to visualized COVID-19 outbreak in Sri Lanka.
 
 # Literature Review
 
