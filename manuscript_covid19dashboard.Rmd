@@ -38,7 +38,10 @@ As of September 20th, 2021, 221 countries and territories are infected by the CO
 
 # Introduction
 
-The COVID-19 pandemic is a global coronavirus illness outbreak that began in 2019 and is being caused by the Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) virus. In December 2019, the first COVID-19-infected patient was discovered in Wuhan, China. According to Worldmeter data, there were 229835231 confirmed cases, 206515718 recovered cases, 18605877 active cases, and 4713636 deaths worldwide as of September 20, 2021. Currently, 99.5 percent of active patients are in a mild state, while 0.5 percent are in a critical state.
+COVID-19 has expanded over the globe, having a significant impact on our daily lives and work. In the fight against COVID-19, early responses and timely decisions and actions are critical to save communities and economy worldwide. In order to make effective decisions, data is essential. Data-driven information gide the decision-making process and also evaluate the effectiveness of strategies taken.
+
+Given such available data, it is important to develop tools for exploratory analysis for 
+
 
 Dashboards are one of the greatest visual interpretation methods for tracking the COVID-19 pandemic's spread and communication. There are a plethora of COVID-19 visualization dashboards that have been designed to visualize the pandemic's global and local status. Different software can be used to generate dashboards. We explored 15 dashboards designed to visualize COVID-19 data in the global and country levels. First, dashboards were compared to identify the various features, visualization approaches, and enhancements that should be implemented. Next, we developed an interactive dashboard to visualized COVID-19 outbreak in Sri Lanka.
 
