@@ -45,7 +45,9 @@ In the response to the COVID-19 pandemic, massive amounts of data are being gene
 
 There are a plethora of COVID-19 visualization dashboards that have been designed to visualize the pandemic's global and local status. Different software can be used to generate dashboards. We explored 15 dashboards designed to visualize COVID-19 data in the global and country levels. First, dashboards were compared to identify the various features, visualization approaches, and enhancements that should be implemented. Next, we developed an interactive dashboard to visualized COVID-19 outbreak in Sri Lanka.
 
-# Literature Review
+The rest of the paper is organized as follows: the [Section 2](#litreview) of dashboards created using data related to COVID-19 pandemic. [Section 3](#methods) provides the methodology; [Section 4](#results) presents results; and [Section 5](#conclusion) offers some concluding remarks.
+
+# Literature Review {#litreview}
 
 Initially 15 dashboards were compared  to determine which data types are most frequently shown in dashboards. The 15 dashboards we used in the study are listed below (Table 1).
 
@@ -168,7 +170,7 @@ As shown in table 04 almost each & every dashboard, line charts & bar charts hav
 
 
 
-# Methodology
+# Methodology {#method}
 
 ## Data
 
@@ -192,7 +194,7 @@ Table 5 provides an overview of methods that have been used to visualize data.
 |Daily COVID-19 death cases by time         |Time series plots \hfill\break
 |Total COVID-19 confirmed cases by time and wave         |Time series plots annotated with vertical lines to denote significant milestones \hfill\break
 |Total COVID-19 death cases by time and wave         | Histogram \hfill\break
-|Distribution of COVID-19 patients by districts        | Tile map, Choropleth maps, Dorling Cartogram, heatmaps \hfill\break
+|Distribution of COVID-19 patients by districts        | Tree map, Choropleth maps, Dorling Cartogram, heatmaps \hfill\break
 |Total vaccination by first dose and second dose        | Time series plot \hfill\break
 |Total administrated does by vaccine name       | Stacked bar chart \hfill\break
 |Total administrated does by vaccine name       | Stacked bar chart \hfill\break
@@ -202,7 +204,7 @@ Table 5 provides an overview of methods that have been used to visualize data.
 
 
 
-# Results
+# Results {#results}
 
 
 The "Sri Lanka COVID-19 Dashboard" provides an overview of the COVID-19 pandemic for Sri Lanka. This dashboard has eight panels as follows.
@@ -224,7 +226,7 @@ The "Sri Lanka COVID-19 Dashboard" provides an overview of the COVID-19 pandemic
 Inorder, to compare patterns across districts min-max transformation is used to normalize data into 0-1 scale. 
 
 
-# Discussion and Further research
+# Discussion and Further research {#conclusions}
 
 
 Bar charts & line charts are the most frequently used tools for the visualization of total cases, daily cases & comparisons with respect to time. Some dashboards contained doughnut shape pie charts to summarize the total figures. In almost each and every dashboard, value boxes have been used to represent total figures. Some dashboards contained interactive maps & data tables to visualize the distribution of cases by country, province, region or state. All dashboards are daily updating real time dashboards. Gender, age groups and ethnicity can be identified as common breakdowns. The data sets & related links are available on most of the dashboards & can be downloaded. It can be seen that it is very easy, clear and user friendly to identify confirmed, recovered and deceased cases in dashboards which include one color theme for the whole dashboard. Dashboards with the dark background are more comfortable to the eyes than dashboards with light background & light colors. Also, it is better if the dashboard can be fitted on a single screen rather than adjusting through a grid overlay. 
