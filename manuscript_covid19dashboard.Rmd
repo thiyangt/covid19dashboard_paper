@@ -75,7 +75,7 @@ Initially 15 dashboards were compared  to determine which data types are most fr
 
 
 
-### Summary of data representation on dashboards
+## Summary of data representation on dashboards
 
 **Table 02: Summary of data represent in the dashboards**
 
@@ -127,7 +127,7 @@ gender | \checkmark  | | | | | |
 
 
 
-### 2.2 Comparison of Dashboards
+## 2.2 Comparison of Dashboards
 
 Before developing a dashboard, it is necessary to think about which visualization tools & features that should be contained in the dashboards. What are the most suitable plots, how many panels in the dashboard, what data should be included, how to fit dashboard on a screen, colors & is it real time updated or not are the common things that should be considered before develop the dashboards. In table 02 has been compared these visualization tools & features under the following categories. 
 
@@ -166,7 +166,7 @@ Before developing a dashboard, it is necessary to think about which visualizatio
   
 
 
-As shown in table 04 almost each & every dashboard, line charts & bar charts have been used to visualize the data. Heat map & dot plot has been used only one dashboard. Only four dashboards have been fitted with a single screen. The majority of dashboards have used color theme on the whole dashboard. That is, dashboards have been applied different colors for different type of data (i.e. One specific color for confirmed cases, another color for deaths, etc.) in the whole dashboard. The data set & related links have available on some dashboards & users can download these data sets. There are 6 dashboards with dark background while others have been used light background. Last updated time & date of the latest available data  has been reported at the top or bottom of the first panel in the dashboard. Like, half of dashboards included all data in one panel.    
+As shown in Table 4 almost each & every dashboard, line charts & bar charts have been used to visualize the data. Heat map & dot plot has been used only one dashboard. Only four dashboards have been fitted with a single screen. The majority of dashboards have used color theme on the whole dashboard. That is, dashboards have been applied different colors for different type of data (i.e. One specific color for confirmed cases, another color for deaths, etc.) in the whole dashboard. The data set & related links have available on some dashboards & users can download these data sets. There are 6 dashboards with dark background while others have been used light background. Last updated time & date of the latest available data  has been reported at the top or bottom of the first panel in the dashboard. Like, half of dashboards included all data in one panel.    
 
 
 
@@ -182,8 +182,7 @@ R software was used for data cleaning and analysis. The flexdashboard [@flexdash
 
 ## Data visualization
 
-Table 5 provides an overview of methods that have been used to visualize data.
-
+In this study, we have daily COVID-19 data related to deaths, recovered and confirmed cases in all 25 districts in Sri Lanka. This structure generates a multiple time series collection. Visualizing these time series data is useful to identify similarities and dissimilarities between districts and their general trends. There are two approaches to visualizing these time series: (i) drawing individual time series plots for each district, and (ii) simultaneously plots all time series on a single panel. Plotting separate panels for each district is not effective. The reason is that it is hard to compare across 25 different panels at once. Plotting all time series simultaneously is also not possible due to overlapping time series and scale differences. We use heatmaps  to visualize global and local similarities and dissimilarities across districts (@peng2008method) along with Tree Maps, Choropleth Maps, and  Dorling Cartogram. The cumulative number of confirmed deaths, and confirmed cases (both on log scale and linear scale) were used to compare the status of Sri Lanka against the top-10 countries affected by COVID-19. Furthermore, we use color-blind friendly colour palettes for the graphics. To represent qualitative data, a diverging colour palette was used, and to represent numeric variables, a sequential colour theme was used. Table 5 provides an overview of methods that have been used to visualize data.
 
 **Table 5: Data visualization approaches used to visualize data**
 
