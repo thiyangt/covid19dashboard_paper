@@ -7,8 +7,13 @@ output:
 bibliography: references.bib
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r setup, include=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(ceylon)
+library(tidyverse)
+library(sf)
+#install.packages("cartogram")
+library(cartogram)
 ```
 
 
@@ -223,6 +228,153 @@ The "Sri Lanka COVID-19 Dashboard" provides an overview of the COVID-19 pandemic
 
 
 Inorder, to compare patterns across districts min-max transformation is used to normalize data into 0-1 scale. 
+
+
+```{r, comment=NA, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Distribution of COVID19 Cases by Districts Plotted on a Single Panel"}
+library(covid19srilanka)
+library(tidyverse)
+library(patchwork)
+data("district.wise.cases")
+f1 <- ggplot(district.wise.cases, aes(
+  x=Date, y=Count,  col=District)) + geom_line() + ggtitle("A")
+
+```
+
+```{r, comment=NA, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Distribution of COVID19 Cases by Districts Plotted on a Single Panel", fig.height=10, fig.width=10}
+library(covid19srilanka)
+library(tidyverse)
+data("district.wise.cases")
+f2 <- ggplot(district.wise.cases, aes(
+  x=Date, y=Count)) + geom_line() + 
+  facet_wrap(vars(District), scale="free", ncol=5) + ggtitle("B")
+f1/f2
+```
+
+
+```{r, echo=FALSE, comment=NA, message=FALSE, warning=FALSE}
+library(viridis)
+library(patchwork)
+# Get District wise data 
+District_Covid <- district.wise.cases
+District_Covid <-District_Covid[order(as.Date(District_Covid$Date, format="%Y-%m-%d")), ]
+
+# Get total count for each district
+Last_day <- District_Covid %>%
+  filter(Date == max(District_Covid$Date))
+
+
+Covid <- Last_day %>%
+  mutate(District = case_when(
+    District == "Kurunagala" ~ "Kurunegala",
+    TRUE ~ District
+  ))
+
+Covidnew <- Covid %>%
+  mutate(parents = "Confirmed")
+
+
+i <- 1:length(District_Covid$District)
+District_Covid$daily <- District_Covid$Count[i+26] - District_Covid$Count[i]
+District_Covid$Date <- as.Date(District_Covid$Date)
+District_Covid <- head(District_Covid, -26)
+
+District_Covid_new <- District_Covid %>%
+  arrange(Count) %>%
+  mutate(District = fct_inorder(factor(District, ordered = TRUE)))
+
+p1 <- ggplot(District_Covid_new, aes(Date, District)) + 
+           geom_tile(aes(fill = daily))+
+           scale_fill_viridis(option = "magma")+ 
+           scale_x_date(date_breaks = '1 week', date_labels = "%d-%b-%Y") + ggtitle("A")
+```
+
+
+```{r, echo=FALSE,fig.cap="(A) Global View of Distribution of COVID19 Cases by DIstricts, (B) Local View of Distribution of COVID19 Cases by Districts", fig.width=10, fig.height=10}
+
+cov_District <- as.data.frame(District_Covid)
+
+District <- c(District_Covid$District[1:26])
+data <- cov_District
+
+# Apply min-max transformation for each district separately
+covid <- function(data, District){
+  results <- list(1:26)
+  for(i in 1: length(District)){
+    x <- filter(data, District == District[i])
+    j <- 1:(nrow(data)/26)
+    y <- x$daily
+    x$min_max <-(y[j] - min(y))/(max(y) - min(y))
+    results[[i]] <- x
+  }
+  return(results)
+}
+
+Data <- covid(data, District)
+District_data <- do.call(rbind, Data)
+
+District_Covid_new_1 <- District_data %>%
+  arrange(Count) %>%
+  mutate(District = fct_inorder(factor(District, ordered = TRUE)))
+
+p2 <- ggplot(District_Covid_new_1, aes(Date, District)) + geom_tile(aes(fill = min_max)) + scale_fill_viridis(option = "magma") + scale_x_date(date_breaks = '1 week', date_labels = "%d-%b-%Y") + ggtitle("B")
+
+p1/p2
+```
+
+```{r, comment=NA, message=FALSE, warning=FALSE}
+
+Last_day <- District_Covid %>%
+  filter(Date == max(District_Covid$Date))
+
+Covid <- Last_day %>%
+  mutate(District = case_when(
+    District == "Kurunagala" ~ "Kurunegala",
+    TRUE ~ District
+  ))
+
+Covidnew <- Covid %>%
+  mutate(parents = "Confirmed")
+
+SL <- district
+SL$DISTRICT <- str_to_title(SL$DISTRICT)
+colnames(SL) <- c("geometry", "District", "status", "population")
+
+Covid_SL <- left_join(SL, Covid, by = c("District"))
+
+Ampara <- Covid%>%
+  filter(District %in% c("Kalmunai","Ampara" ))
+newcount <- Ampara$Count %>%
+  sum()
+
+Covid_SL <- Covid_SL %>%
+  filter(!(District == "[unknown]")) %>%
+  filter(!(District == "Kalmunai")) %>%
+  mutate(Count = ifelse(District == "Ampara", newcount, Count))
+
+m1 <- ggplot(Covid_SL) + geom_sf(aes(fill = Count, text = paste('District:', District)), show.legend = TRUE) + 
+  scale_fill_viridis()+
+  theme(axis.text.x = element_blank(), 
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        rect = element_blank()) + ggtitle("A")
+
+Covid_SL <- Covid_SL[-c(1), ]
+dorl <- cartogram_dorling(Covid_SL, weight = "population")%>%
+  st_as_sf()
+
+m2 <- ggplot(dorl)+
+  geom_sf(data = Covid_SL)+
+  geom_sf(aes(fill = Count, text = paste('District:', District)))+
+   scale_fill_viridis()+
+  theme(axis.text.x = element_blank(), 
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        rect = element_blank()) + ggtitle("B")
+
+m1|m2
+
+```
+
 
 
 # Discussion and Further research {#conclusions}
