@@ -356,7 +356,7 @@ m1 <- ggplot(Covid_SL) + geom_sf(aes(fill = Count, text = paste('District:', Dis
   theme(axis.text.x = element_blank(), 
         axis.text.y = element_blank(),
         axis.ticks = element_blank(),
-        rect = element_blank()) + ggtitle("A")
+        rect = element_blank()) + ggtitle("A: Choropleth map")
 
 Covid_SL <- Covid_SL[-c(1), ]
 dorl <- cartogram_dorling(Covid_SL, weight = "population")%>%
@@ -369,7 +369,7 @@ m2 <- ggplot(dorl)+
   theme(axis.text.x = element_blank(), 
         axis.text.y = element_blank(),
         axis.ticks = element_blank(),
-        rect = element_blank()) + ggtitle("B")
+        rect = element_blank()) + ggtitle("B: Dorling cartogram")
 
 m1|m2
 
