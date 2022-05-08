@@ -53,9 +53,7 @@ The rest of the paper is organized as follows: [Section 2](#litreview) of dashbo
 
 # Literature Review {#litreview}
 
-Dashboards are one of the best visual interpretation method of tracking the spread & communication of COVID-19 pandemic. Initially 15 dashboards were compared  to determine which data types are most frequently shown in dashboards. The 15 dashboards we used in the study are listed below (Table 1). We compared dashboards to identify the different features, visualization
-methods and improvements that should be occurred.
-
+Dashboards are one of the best visual interpretation methods for tracking the spread and communication of the COVID-19 pandemic. The 15 dashboards we used in the literature survey are listed in Table 1. We compared dashboards to identify data types, plotting techniques, colour themes, and other features such as interactivity on plots and panel numbers.
 
 
 **Table 01: Labeled of the Dashboards**
@@ -78,9 +76,7 @@ methods and improvements that should be occurred.
 |14 | COVID 19 ZA South Africa Dashboard |@za|
 |15 | COVID-19 dashboard for Germany |@rki|
 
-
-
-First, dashboards were compared to determine which data types are most frequently shown in dashboards. The results are shown in Table 02.
+Table 02 summarizes the data types that are most frequently shown in dashboards. As shown in Table 02, all dashboards which are considered in this paper represent the data related to COVID-19 confirmed cases, recovered cases, and deaths. There were 8 dashboards out of 15 dashboards that contained vaccination details.
 
 **Table 02: Summary of data represent in the dashboards**
 
@@ -104,7 +100,7 @@ First, dashboards were compared to determine which data types are most frequentl
 | 15                    | German |\checkmark          |  \checkmark        |\checkmark  | \checkmark              | |
 
 
-As shown in table 02 all dashboards which are considered in this paper represent the data related to COVID-19 confirmed cases, recovered cases & deaths. There have been contained vaccination details, 8 dashboards out of 15 dashboards. In almost each & every dashboard, value boxes have been used to represent these total figures. Bar charts & line charts (trend lines) are most frequently used to visualize these data (confirmed cases, recovered cases, deaths & vaccination details) with respect to time. A Majority of dashboards presented data by daily or weekly. The mapping is used to track the spatial distribution of COVID-19 cases by country/ provincial/ regional etc. When visualizing the data by map color code system & circles with respect to the size of the cases have been used to visualize the variation in size. The considerable number of dashboards has been used doughnut shape pie charts to represent total COVID-19 confirmed cases, recovered cases, active cases & deaths as a percentage. Also, region, gender, age group & ethnicity can be identified as common breakdowns of COVID-19 cases. In some dashboard has been added data tables for representing cases distribution by province/region.  Only very few dashboards have been visualized in COVID-19 test details. Only 6 dashboards have been compared to global situations. In addition, fatality rate, incidence rate, ICU beds, stage of the patients & hospitalize details have been contained in the several dashboards. These are the most common data types that have been contained in the dashboards. The main tools that have been used for different purpose can be shown in the following table.\hfill\break
+Table 03 summarizes the visualization methods used in the dashboards. In almost every dashboard, value boxes have been used to represent these total figures. Bar charts and line charts (trend lines) are most frequently used to visualize this data (confirmed cases, recovered cases, deaths, and vaccination details) with respect to time. A majority of dashboards presented data either daily or weekly. The mapping is used to track the spatial distribution of COVID-19 cases by country, province, regional etc. When visualizing the data by the map color code system, circles with respect to the size of the cases have been used to visualize the variation in size. The considerable number of dashboards has been used in doughnut-shaped pie charts to represent total COVID-19 confirmed cases, recovered cases, active cases, and deaths as a percentage. Also, region, gender, age group, and ethnicity can be identified as common breakdowns of COVID-19 cases. Data tables for representing case distribution by province/region have been added to some dashboards. Very few dashboards have been visualized in the COVID-19 test details. Only 6 dashboards have been compared to global situations. In addition, the fatality rate, incidence rate, ICU beds, stage of the patients, and hospitalized details have been contained in the several dashboards.\hfill\break
 
 
 **Table 03: Summary of tools which are used for different purpose**
