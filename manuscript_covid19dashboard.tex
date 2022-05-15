@@ -101,7 +101,7 @@ Vaccine Administration}
 \maketitle
 
 \textbf{Thiyanga S. Talagala}\footnote{Corresponding author, email:
-  \href{mailto:ttalagala@gmail.com}{\nolinkurl{ttalagala@gmail.com}}}
+  \href{mailto:ttalagala@sjp.ac.lk}{\nolinkurl{ttalagala@sjp.ac.lk}}}
 
 Department of Statistics, Faculty of Applied Sciences
 
@@ -125,7 +125,7 @@ dashboards to see how various visualization techniques were used. This
 paper describes the creation and implementation of a dashboard for
 COVID-19 epidemic and vaccination administration data in Sri Lanka.
 
-\textbf{Keywords:} Visualization, multiple time series, heatmap,
+\textbf{Keywords:} Visualization, multiple time series, heat map,
 COVID-19 vaccine, flexdashboard
 
 \hypertarget{introduction}{%
@@ -140,9 +140,9 @@ of strategies taken.
 
 Massive amounts of data are being generated in the response to the
 COVID-19 pandemic. Given this available data, it is critical to create
-tools for exploratory analysis for policymakers, health officials, and
+tools for exploratory analysis for policy-makers, health officials, and
 the general public. Dashboards are one of the greatest visual
-interpretation methods for tracking the COVID-19 pandemic's spread and
+interpretation methods for tracking the COVID-19 pandemics spread and
 vaccine administration. Dashboards allow users to quickly interact with
 a combination of exploratory visualizations and gain a quick overview of
 the data. This paper describes the development and implementation of a
@@ -150,7 +150,7 @@ dashboard for the COVID-19 outbreak and vaccine administration data in
 Sri Lanka.
 
 There are a plethora of COVID-19 visualization dashboards that have been
-designed to visualize the pandemic's global and local status. Different
+designed to visualize the pandemics global and local status. Different
 software can be used to generate dashboards. We explored 15 dashboards
 designed to visualize COVID-19 data at the global and country levels.
 First, dashboards were compared to identify the various features,
@@ -188,7 +188,7 @@ numbers.
 No & Name of the Dashboard & Reference \\
 \midrule
 \endhead
-1 & COVID-19 dashboard created by the John Hopkins University Center for
+1 & COVID-19 dashboard created by the John Hopkins University Centre for
 Systems Science \& Engineering (JHU CSSE) & {``{COVID-19 Map -- Johns
 Hopkins Coronavirus Resource Center}''} (2022) \\
 2 & WHO COVID-19 Dashboard & {``{WHO Coronavirus (COVID-19)
@@ -278,8 +278,8 @@ recovered cases, deaths, and immunization details are bar charts and
 line charts (trend lines). The majority of dashboards displayed data on
 a daily or weekly basis. The spatial distribution of COVID-19 cases by
 country, province, regional, and other factors is tracked using
-choropleth maps. When visualizing the data by the map color code system,
-circles with respect to the size of the cases have been used to
+choropleth maps. When visualizing the data by the map colour code
+system, circles with respect to the size of the cases have been used to
 visualize the variation in size. Several dashboards use doughnut-shaped
 pie charts to indicate total COVID-19 confirmed cases, recovered cases,
 active cases, and deaths as a proportion. Furthermore, region, gender,
@@ -329,7 +329,7 @@ Global comparison & \checkmark & \checkmark & & & & \checkmark &
 Before developing a dashboard, it is necessary to think about which
 visualization tools and features should be contained in the dashboard.
 What are the most suitable plots, how many panels in the dashboard, what
-data should be included, how to fit the dashboard on a screen, colors,
+data should be included, how to fit the dashboard on a screen, colours,
 and is it real time updated or not are the common things that should be
 considered before developing the dashboards. Table 4 summarizes
 information under the following categories:
@@ -346,11 +346,11 @@ information under the following categories:
   screen or not (users can see the whole dashboard on a single screen
   without adjusting through grid overlay or not).
 \item
-  Color theme -- is there a unique color used for one data type in the
-  whole dashboard (i.e.: one color scale for one data type everywhere on
-  the dashboard).
+  Colour theme -- is there a unique colour used for one data type in the
+  whole dashboard (i.e.: one colour scale for one data type everywhere
+  on the dashboard).
 \item
-  Dark background -- the background color of the dashboard is dark or
+  Dark background -- the background colour of the dashboard is dark or
   light.
 \item
   Data available -- whether users can downloaded or whether data is
@@ -374,7 +374,7 @@ dashboard}
   >{\centering\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.12}}@{}}
 \toprule
 Name of the Dashboard & Number of panels & Visualization tools & Fitted
-on a single screen & Color theme & Dark background & Data available &
+on a single screen & Colour theme & Dark background & Data available &
 Real time updated \\
 \midrule
 \endhead
@@ -423,10 +423,10 @@ table\hfill\break Interactive map\hfill\break & \checkmark & \checkmark
 As listed in Table 4, on almost each and every dashboard, line charts
 and bar charts have been used to visualize the data. The heat map and
 dot plot were only used on one dashboard. Only four dashboards have been
-fitted with a single screen. The majority of dashboards use a color
+fitted with a single screen. The majority of dashboards use a colour
 theme on the whole dashboard. That is, dashboards have been applied with
-different colors for different types of data (i.e., one specific color
-for confirmed cases, another color for deaths, etc.) across the whole
+different colours for different types of data (i.e., one specific colour
+for confirmed cases, another colour for deaths, etc.) across the whole
 dashboard. The data set and related links are available on some
 dashboards, and users can download these data sets. There are 6
 dashboards with a dark background, while others have a light background.
@@ -455,7 +455,7 @@ R software was used for data cleaning and analysis. The flexdashboard
 visualization dashboard. The initial layout for the dashboard was
 prepared based on Krispin (2021). Data visualizations are generated
 using the ggplot2 (\textbf{ggplot2?}) and plotly (Sievert 2020) packages
-in R. We used color-blind friendly color palettes for the graphics. A
+in R. We used colour-blind friendly colour palettes for the graphics. A
 diverging colour palette was used to represent qualitative data, and to
 represent numeric variables, a sequential colour theme was used. Table 5
 provides an overview of methods that have been used to visualize data.
@@ -478,7 +478,7 @@ annotated with vertical lines to denote significant milestones
 \hfill\break \\
 Total COVID-19 death cases by time and wave & Histogram \hfill\break \\
 Distribution of COVID-19 patients by districts & Tree map, Choropleth
-maps, Dorling Cartogram, heatmaps \hfill\break \\
+maps, Dorling Cartogram, heat maps \hfill\break \\
 Total vaccination by first dose and second dose & Time series plot
 \hfill\break \\
 Total administrated does by vaccine name & Stacked bar chart
@@ -487,16 +487,16 @@ Total administrated does by vaccine name & Stacked bar chart
 \hfill\break \\
 Total administrated does by vaccine name & Stacked bar chart
 \hfill\break \\
-Comparison of cases with in Sri Lanka with Top 10 countries &
-Cummulative cases by time, Log of cummulative cases by time, stacked bar
-chart \hfill\break \\
+Comparison of cases with in Sri Lanka with Top 10 countries & Cumulative
+cases by time, Log of cumulative cases by time, stacked bar chart
+\hfill\break \\
 Spread of COVID-19 around the world & Choropleth maps \hfill\break \\
 \bottomrule
 \end{longtable}
 
 We now describe the novel visualization approaches we included in our
 dashboard. To effectively distribute the vaccine and to support
-situational awareness and inform policymakers' decision-making, it is
+situational awareness and inform policy-makers' decision-making, it is
 important to know the district-wise spread of COVID-19 cases. ~We have
 daily COVID-19 data related to confirmed cases in all 25 districts in
 Sri Lanka. This structure generates a multiple time series collection.
@@ -512,13 +512,13 @@ it is hard to compare across 25 different panels at once. In order to
 overcome these problems in multiple time series visualization, we use
 heat maps (Peng (2008)) to visualize global and local similarities and
 dissimilarities across districts. The associated results are shown in
-Figure 2. Here, two heatmaps are used to show the global variations
+Figure 2. Here, two heat maps are used to show the global variations
 (Figure 2: A) and local variations (Figure 2: B) in the time series
 collection. Figure 2-A cell colours represent the actual counts of the
 COVID-19 confirmed cases. This is useful to get an idea of the
-differences in absolute values. Figure 2-B cell colors represent the
+differences in absolute values. Figure 2-B cell colours represent the
 normalized values created by applying the min-max transformation. A
-Min-max transformation is applied to each district's time series by
+min-max transformation is applied to each district's time series by
 using the corresponding district's minimum and maximum value. This helps
 us to get an idea about patterns within districts. For example,
 according to Figure 2A, we can see that in Colombo, Gampaha, and
@@ -528,7 +528,7 @@ increasing trend pattern as the right-hand side of the cells are lighter
 than the left-hand side cells in the heat map. Furthermore, according to
 Figure 2B, all districts reported a high number of cases on August 19,
 24, and 29, 2021. Figure 3B is useful for identifying these local
-outlying behaviors. As shown in Figure 4, we also use a Choropleth map
+outlying behaviours. As shown in Figure 4, we also use a Choropleth map
 and Dorling cartogram to visualize the spatial distribution of COVID-19
 cases. The vaccination information is visualized through interactive
 time series plots and bar charts.
@@ -553,15 +553,11 @@ single panel, (B) Plotted on separate panels.}
 \caption{Spatial distribution of COVID1-19 cases by districts}
 \end{figure}
 
-The source code to reprouduce the results are available in a public
-GitHub repository and can be access online via
-\url{https://github.com/thiyangt/covid19srilanka}
-
 \hypertarget{results}{%
 \section{Results}\label{results}}
 
 The ``Sri Lanka COVID-19 Dashboard'' provides an overview of the
-COVID-19 pandemic and administration of vaacine information in Sri
+COVID-19 pandemic and administration of vaccine information in Sri
 Lanka. This dashboard has eight panels as listed in Table 6.
 
 \textbf{Table 6: Description of the panels}
@@ -611,12 +607,12 @@ Log of Cumulative Cases in Sri Lanka with Top 10 Countries - Compare the
 confirmed and deaths in Sri Lanka with top 10 countries by log
 cumulative time series plots\hfill\break (The data has been pulled from
 WHO)\hfill\break & Figure 8 \\
-Global Comparison & Compare the total confirmed \& deaths in Sri lanka
+Global Comparison & Compare the total confirmed \& deaths in Sri Lanka
 with top 10 countries in Global \& Asia. There are two
-tabs.\hfill\break * Comparison of the sri Lanka with Top 10 Countries
+tabs.\hfill\break * Comparison of the Sri Lanka with Top 10 Countries
 Reporting the Most COVID-19 Cases in the World - Compare the total
 confirmed \& deaths in Sri Lanka with top 10 countries in the world \&
-compare the case fatality ratios\hfill\break * Comparison of the sri
+compare the case fatality ratios\hfill\break * Comparison of the Sri
 Lanka with Top 10 Countries Reporting the Most COVID-19 Cases in the
 Asia - Compare the total confirmed \& deaths in Sri Lanka with top 10
 countries in the Asia \& compare the case fatality ratios\hfill\break &
@@ -716,7 +712,7 @@ dashboards are updated daily in real time. Gender, age groups, and
 ethnicity can be identified as common breakdowns. Most data sets and
 related links are available.
 
-We used a color-blind-friendly theme when creating our dashboard. The
+We used a colour-blind-friendly theme when creating our dashboard. The
 dashboard includes both static and interactive charts that can be used
 for explanation, exploration, and display. The data speaks to us, but it
 is not always easy to understand in what language they are doing it.

@@ -17,7 +17,7 @@ library(cartogram)
 ```
 
 
-**Thiyanga S. Talagala**^[Corresponding author, email: ttalagala@gmail.com]
+**Thiyanga S. Talagala**^[Corresponding author, email: ttalagala@sjp.ac.lk]
 
 Department of Statistics, Faculty of Applied Sciences 
 
@@ -38,15 +38,15 @@ University of Sri Jayewardenepura, Sri Lanka, CO 10230
 
 Dashboards are the most common visualization method for displaying COVID-19 data and informing the public. We examined 15 different dashboards to see how various visualization techniques were used. This paper describes the creation and implementation of a dashboard for COVID-19 epidemic and vaccination administration data in Sri Lanka.
 
-**Keywords:** Visualization, multiple time series, heatmap, COVID-19 vaccine, flexdashboard
+**Keywords:** Visualization, multiple time series, heat map, COVID-19 vaccine, flexdashboard
 
 # Introduction
 
 COVID-19 has expanded over the globe, having a significant impact on our daily lives and work. Early responses and timely decisions and actions are critical to saving communities and economies worldwide. Data is essential in order to make effective decisions. Data-driven information guides the decision-making process and also evaluates the effectiveness of strategies taken.
 
-Massive amounts of data are being generated in the response to the COVID-19 pandemic. Given this available data, it is critical to create tools for exploratory analysis for policymakers, health officials, and the general public. Dashboards are one of the greatest visual interpretation methods for tracking the COVID-19 pandemic's spread and vaccine administration. Dashboards allow users to quickly interact with a combination of exploratory visualizations and gain a quick overview of the data. This paper describes the development and implementation of a dashboard for the COVID-19 outbreak and vaccine administration data in Sri Lanka.
+Massive amounts of data are being generated in the response to the COVID-19 pandemic. Given this available data, it is critical to create tools for exploratory analysis for policy-makers, health officials, and the general public. Dashboards are one of the greatest visual interpretation methods for tracking the COVID-19 pandemics spread and vaccine administration. Dashboards allow users to quickly interact with a combination of exploratory visualizations and gain a quick overview of the data. This paper describes the development and implementation of a dashboard for the COVID-19 outbreak and vaccine administration data in Sri Lanka.
 
-There are a plethora of COVID-19 visualization dashboards that have been designed to visualize the pandemic's global and local status. Different software can be used to generate dashboards. We explored 15 dashboards designed to visualize COVID-19 data at the global and country levels. First, dashboards were compared to identify the various features, visualization approaches, and enhancements that should be implemented. Next, we developed an interactive dashboard to visualize the COVID-19 outbreak and vaccination information in Sri Lanka. This dashboard provides front-line health officers a situational awareness of the spread of COVID-19 and the status of the vaccination program.
+There are a plethora of COVID-19 visualization dashboards that have been designed to visualize the pandemics global and local status. Different software can be used to generate dashboards. We explored 15 dashboards designed to visualize COVID-19 data at the global and country levels. First, dashboards were compared to identify the various features, visualization approaches, and enhancements that should be implemented. Next, we developed an interactive dashboard to visualize the COVID-19 outbreak and vaccination information in Sri Lanka. This dashboard provides front-line health officers a situational awareness of the spread of COVID-19 and the status of the vaccination program.
 
 The rest of the paper is organized as follows: [Section 2](#litreview) of dashboards created using data related to the COVID-19 pandemic. [Section 3](#methods) presents the methodology and basic design concept; [Section 4](#results) presents the results; and [Section 5](# conclusion) concludes.
 
@@ -61,7 +61,7 @@ Dashboards are one of the best visual interpretation methods for tracking the sp
 
 |No |Name of the Dashboard|Reference|
 |:--:|:-------------------|------|
-|1 | COVID-19 dashboard created by the John Hopkins University Center for Systems Science & Engineering (JHU CSSE) |@jh|
+|1 | COVID-19 dashboard created by the John Hopkins University Centre for Systems Science & Engineering (JHU CSSE) |@jh|
 |2 | WHO  COVID-19 Dashboard |@who|
 |3 | COVID-19 surveillance dashboard created by the University of Virginia |@nssac|
 |4 | Corona cases (COVID-19) per municipality in Belgium dashboard |@belgium|
@@ -103,7 +103,7 @@ Table 02 summarizes the data types that are most frequently shown in dashboards.
 | 14                    | South Africa |\checkmark        |   \checkmark        |\checkmark  | \checkmark              | \checkmark  |
 | 15                    | German |\checkmark          |  \checkmark        |\checkmark  | \checkmark              | |
 
-Table 03 highlights the dashboard visualization techniques. Value boxes have been utilized to display total figures on practically every dashboard. The most common ways of visualizing confirmed cases, recovered cases, deaths, and immunization details are bar charts and line charts (trend lines). The majority of dashboards displayed data on a daily or weekly basis. The spatial distribution of COVID-19 cases by country, province, regional, and other factors is tracked using choropleth maps. When visualizing the data by the map color code system, circles with respect to the size of the cases have been used to visualize the variation in size. Several dashboards use doughnut-shaped pie charts to indicate total COVID-19 confirmed cases, recovered cases, active cases, and deaths as a proportion. Furthermore, region, gender, age group, and ethnicity can be identified as common breakdowns of COVID-19 cases. Data tables for representing cases' distribution by province/region have been added to some dashboards. Very few dashboards have been visualized in the COVID-19 test details. Only 6 dashboards have been compared to global situations. In addition, the fatality rate, incidence rate, ICU beds, stage of the patients, and hospitalized details have been contained in the several dashboards.\hfill\break
+Table 03 highlights the dashboard visualization techniques. Value boxes have been utilized to display total figures on practically every dashboard. The most common ways of visualizing confirmed cases, recovered cases, deaths, and immunization details are bar charts and line charts (trend lines). The majority of dashboards displayed data on a daily or weekly basis. The spatial distribution of COVID-19 cases by country, province, regional, and other factors is tracked using choropleth maps. When visualizing the data by the map colour code system, circles with respect to the size of the cases have been used to visualize the variation in size. Several dashboards use doughnut-shaped pie charts to indicate total COVID-19 confirmed cases, recovered cases, active cases, and deaths as a proportion. Furthermore, region, gender, age group, and ethnicity can be identified as common breakdowns of COVID-19 cases. Data tables for representing cases' distribution by province/region have been added to some dashboards. Very few dashboards have been visualized in the COVID-19 test details. Only 6 dashboards have been compared to global situations. In addition, the fatality rate, incidence rate, ICU beds, stage of the patients, and hospitalized details have been contained in the several dashboards.\hfill\break
 
 
 **Table 03: Summary of tools which are used for different purpose**
@@ -133,13 +133,13 @@ gender | \checkmark  | | | | | |
 
 ## Comparison of Dashboards
 
-Before developing a dashboard, it is necessary to think about which visualization tools and features should be contained in the dashboard. What are the most suitable plots, how many panels in the dashboard, what data should be included, how to fit the dashboard on a screen, colors, and is it real time updated or not are the common things that should be considered before developing the dashboards. Table 4 summarizes information under the following categories:
+Before developing a dashboard, it is necessary to think about which visualization tools and features should be contained in the dashboard. What are the most suitable plots, how many panels in the dashboard, what data should be included, how to fit the dashboard on a screen, colours, and is it real time updated or not are the common things that should be considered before developing the dashboards. Table 4 summarizes information under the following categories:
 
   i. Number of panels - How many panels are included in the dashboard.
   ii. Visualization tools – what are the graphical representations of data. 
   iii. Fitted on a single screen – whether the dashboard fits on a single screen or not (users can see the whole dashboard on a single screen without adjusting through grid overlay or not).
-  iv. Color theme – is there a unique color used for one data type in the whole dashboard (i.e.: one color scale for one data type everywhere on the dashboard). 
-  v. Dark background – the background color of the dashboard is dark or light.
+  iv. Colour theme – is there a unique colour used for one data type in the whole dashboard (i.e.: one colour scale for one data type everywhere on the dashboard). 
+  v. Dark background – the background colour of the dashboard is dark or light.
   vi. Data available – whether users can downloaded or whether data is available to reproduce the results. 
   vii. Real time updated – whether the dashboard is updated daily/ specific time (live dashboard) or not.
 
@@ -148,7 +148,7 @@ Before developing a dashboard, it is necessary to think about which visualizatio
 **Table 04: Comparison of visualization tools and features of dashboard** 
 
 
-| Name of the Dashboard | Number of panels|  Visualization tools | Fitted on a single screen | Color theme | Dark background | Data available | Real time updated|
+| Name of the Dashboard | Number of panels|  Visualization tools | Fitted on a single screen | Colour theme | Dark background | Data available | Real time updated|
 |:-------: |:-------: |:-------:  |:-------:|:-------:   |:-------:  |:-------:   |:-------:  |
 | 1                |  1   | Bar chart\hfill\break  Interactive map\hfill\break |\checkmark         |   \checkmark      |\checkmark | \checkmark   | \checkmark
 | 2             | 4   | Line chart\hfill\break  Interactive map\hfill\break  Data table\hfill\break|         |   \checkmark       |    |     \checkmark        |\checkmark 
@@ -167,7 +167,7 @@ Before developing a dashboard, it is necessary to think about which visualizatio
 |15 | 1| Line chart\hfill\break Bar chart\hfill\break  Data table\hfill\break Interactive map\hfill\break | \checkmark| \checkmark| \checkmark|  | \checkmark
 
 
-As listed in Table 4, on almost each and every dashboard, line charts and bar charts have been used to visualize the data. The heat map and dot plot were only used on one dashboard. Only four dashboards have been fitted with a single screen. The majority of dashboards use a color theme on the whole dashboard. That is, dashboards have been applied with different colors for different types of data (i.e., one specific color for confirmed cases, another color for deaths, etc.) across the whole dashboard. The data set and related links are available on some dashboards, and users can download these data sets. There are 6 dashboards with a dark background, while others have a light background. The last updated time and date of the latest available data has been reported at the top or bottom of the first panel in the dashboard. Half of the dashboards included all the information in a single panel. 
+As listed in Table 4, on almost each and every dashboard, line charts and bar charts have been used to visualize the data. The heat map and dot plot were only used on one dashboard. Only four dashboards have been fitted with a single screen. The majority of dashboards use a colour theme on the whole dashboard. That is, dashboards have been applied with different colours for different types of data (i.e., one specific colour for confirmed cases, another colour for deaths, etc.) across the whole dashboard. The data set and related links are available on some dashboards, and users can download these data sets. There are 6 dashboards with a dark background, while others have a light background. The last updated time and date of the latest available data has been reported at the top or bottom of the first panel in the dashboard. Half of the dashboards included all the information in a single panel. 
 
 # Methodology {#method}
 
@@ -177,7 +177,7 @@ We obtained data from COVID-19 situation reports published by the Epidemiology U
 
 ## Design and development
 
-R software was used for data cleaning and analysis. The flexdashboard [@flexdashboard] package was used to build the data visualization dashboard. The initial layout for the dashboard was prepared based on @rami. Data visualizations are generated using the ggplot2 [@ggplot2] and plotly [@plotly] packages in R. We used color-blind friendly color palettes for the graphics. A diverging colour palette was used to represent qualitative data, and to represent numeric variables, a sequential colour theme was used. Table 5 provides an overview of methods that have been used to visualize data.
+R software was used for data cleaning and analysis. The flexdashboard [@flexdashboard] package was used to build the data visualization dashboard. The initial layout for the dashboard was prepared based on @rami. Data visualizations are generated using the ggplot2 [@ggplot2] and plotly [@plotly] packages in R. We used colour-blind friendly colour palettes for the graphics. A diverging colour palette was used to represent qualitative data, and to represent numeric variables, a sequential colour theme was used. Table 5 provides an overview of methods that have been used to visualize data.
 
 **Table 5: Data visualization approaches used to visualize data**
 
@@ -188,15 +188,15 @@ R software was used for data cleaning and analysis. The flexdashboard [@flexdash
 |Daily COVID-19 death cases by time         |Time series plots \hfill\break
 |Total COVID-19 confirmed cases by time and wave         |Time series plots annotated with vertical lines to denote significant milestones \hfill\break
 |Total COVID-19 death cases by time and wave         | Histogram \hfill\break
-|Distribution of COVID-19 patients by districts        | Tree map, Choropleth maps, Dorling Cartogram, heatmaps \hfill\break
+|Distribution of COVID-19 patients by districts        | Tree map, Choropleth maps, Dorling Cartogram, heat maps \hfill\break
 |Total vaccination by first dose and second dose        | Time series plot \hfill\break
 |Total administrated does by vaccine name       | Stacked bar chart \hfill\break
 |Total administrated does by vaccine name       | Stacked bar chart \hfill\break
 |Total administrated does by vaccine name       | Stacked bar chart \hfill\break
-|Comparison of cases with in Sri Lanka with Top 10 countries       | Cummulative cases by time, Log of cummulative cases by time, stacked bar chart \hfill\break
+|Comparison of cases with in Sri Lanka with Top 10 countries       | Cumulative cases by time, Log of cumulative cases by time, stacked bar chart \hfill\break
 |Spread of COVID-19 around the world      | Choropleth maps \hfill\break
 
-We now describe the novel visualization approaches we included in our dashboard. To effectively distribute the vaccine and to support situational awareness and inform policymakers' decision-making, it is important to know the district-wise spread of COVID-19 cases.  We have daily COVID-19 data related to confirmed cases in all 25 districts in Sri Lanka. This structure generates a multiple time series collection. Visualizing this time series data is useful to identify similarities and dissimilarities between districts and their general trends. There are two approaches to visualizing these time series: (i) creating individual time series plots for each district (as shown in Figure 1-A), and (ii) plotting all time series on a single panel at the same time (as shown in Figure 1-B). Plotting all time series simultaneously is also not possible due to overlapping time series and scale differences. Plotting separate panels for each district is not effective. The reason is that it is hard to compare across 25 different panels at once. In order to overcome these problems in multiple time series visualization, we use heat maps (@peng2008method) to visualize global and local similarities and dissimilarities across districts. The associated results are shown in Figure 2. Here, two heatmaps are used to show the global variations (Figure 2: A) and local variations (Figure 2: B) in the time series collection. Figure 2-A cell colours represent the actual counts of the COVID-19 confirmed cases. This is useful to get an idea of the differences in absolute values. Figure 2-B cell colors represent the normalized values created by applying the min-max transformation. A Min-max transformation is applied to each district's time series by using the corresponding district's minimum and maximum value. This helps us to get an idea about patterns within districts. For example, according to Figure 2A, we can see that in Colombo, Gampaha, and Kalutara districts, COVID-19 cases are significantly higher than in other districts. According to Figure 2B, all districts show an increasing trend pattern as the right-hand side of the cells are lighter than the left-hand side cells in the heat map. Furthermore, according to Figure 2B, all districts reported a high number of cases on August 19, 24, and 29, 2021. Figure 3B is useful for identifying these local outlying behaviors. As shown in Figure 4, we also use a Choropleth map and Dorling cartogram to visualize the spatial distribution of COVID-19 cases. The vaccination information is visualized through interactive time series plots and bar charts. 
+We now describe the novel visualization approaches we included in our dashboard. To effectively distribute the vaccine and to support situational awareness and inform policy-makers' decision-making, it is important to know the district-wise spread of COVID-19 cases.  We have daily COVID-19 data related to confirmed cases in all 25 districts in Sri Lanka. This structure generates a multiple time series collection. Visualizing this time series data is useful to identify similarities and dissimilarities between districts and their general trends. There are two approaches to visualizing these time series: (i) creating individual time series plots for each district (as shown in Figure 1-A), and (ii) plotting all time series on a single panel at the same time (as shown in Figure 1-B). Plotting all time series simultaneously is also not possible due to overlapping time series and scale differences. Plotting separate panels for each district is not effective. The reason is that it is hard to compare across 25 different panels at once. In order to overcome these problems in multiple time series visualization, we use heat maps (@peng2008method) to visualize global and local similarities and dissimilarities across districts. The associated results are shown in Figure 2. Here, two heat maps are used to show the global variations (Figure 2: A) and local variations (Figure 2: B) in the time series collection. Figure 2-A cell colours represent the actual counts of the COVID-19 confirmed cases. This is useful to get an idea of the differences in absolute values. Figure 2-B cell colours represent the normalized values created by applying the min-max transformation. A min-max transformation is applied to each district's time series by using the corresponding district's minimum and maximum value. This helps us to get an idea about patterns within districts. For example, according to Figure 2A, we can see that in Colombo, Gampaha, and Kalutara districts, COVID-19 cases are significantly higher than in other districts. According to Figure 2B, all districts show an increasing trend pattern as the right-hand side of the cells are lighter than the left-hand side cells in the heat map. Furthermore, according to Figure 2B, all districts reported a high number of cases on August 19, 24, and 29, 2021. Figure 3B is useful for identifying these local outlying behaviours. As shown in Figure 4, we also use a Choropleth map and Dorling cartogram to visualize the spatial distribution of COVID-19 cases. The vaccination information is visualized through interactive time series plots and bar charts. 
 
 
 ```{r, comment=NA, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Distribution of COVID19 Cases by Districts Plotted on a Single Panel"}
@@ -346,19 +346,10 @@ m1|m2
 
 ```
 
-
-
-
-
-The source code to reprouduce the results are available in a public GitHub repository and can be access online via https://github.com/thiyangt/covid19srilanka
-
-
-
-
 # Results {#results}
 
 
-The "Sri Lanka COVID-19 Dashboard" provides an overview of the COVID-19 pandemic and administration of vaacine information in Sri Lanka.  This dashboard has eight panels as listed in Table 6. 
+The "Sri Lanka COVID-19 Dashboard" provides an overview of the COVID-19 pandemic and administration of vaccine information in Sri Lanka.  This dashboard has eight panels as listed in Table 6. 
 
 
 **Table 6: Description of the panels**
@@ -370,7 +361,7 @@ The "Sri Lanka COVID-19 Dashboard" provides an overview of the COVID-19 pandemic
 |COVID-19 Patients Distribution | Provide an overview of confirmed cases district wise distribution. There are four tabs in this panel.\hfill\break * Total COVID-19 Patients Distribution in Sri Lanka - Total confirmed counts for each district is represented by tree map\hfill\break * Country Map - Total confirmed cases in each district represented by Sri Lanka country map\hfill\break * Distribution of Daily COVID-19 Patients for Last 30 Days - Visualize the daily confirmed cases distribution by districts in last 30 days\hfill\break * By Applying Min-Max Transformation - Visualize the details in the third tab by applying min-max transformation for each district\hfill\break| Figure 6 |
 |Vaccination Details | Provide an overview of COVID-19 vaccination in Sri Lanka. There are two tabs.\hfill\break * Total Vaccine Doses - Visualize the administered vaccine doses as first dose only & fully vaccinated\hfill\break * Total Administered Doses by Vaccine Name - Visualize the vaccination by vaccine names\hfill\break| Figure 7 |
 | Top 10 Countries| In this panel, compare the Sri Lanka confirmed & deaths with top 10 countries in the world (top 10 countries - The countries which have been reported highest number of confirmed cases as 31st of August 2021).\hfill\break There are two tabs.\hfill\break * Comparison of Cumulative Cases in Sri Lanka with Top 10 Countries - Compare the confirmed and deaths in Sri Lanka with top 10 countries by cumulative time series plots\hfill\break * Comparison of Log of Cumulative Cases in Sri Lanka with Top 10 Countries -  Compare the confirmed and deaths in Sri Lanka with top 10 countries by log cumulative time series plots\hfill\break (The data has been pulled from WHO)\hfill\break| Figure 8 |
-|Global Comparison | Compare the total confirmed & deaths in Sri lanka with top 10 countries in Global & Asia. There are two tabs.\hfill\break * Comparison of the sri Lanka with Top 10 Countries Reporting the Most COVID-19 Cases in the World - Compare the total confirmed & deaths in Sri Lanka with top 10 countries in the world & compare the case fatality ratios\hfill\break * Comparison of the sri Lanka with Top 10 Countries Reporting the Most COVID-19 Cases in the Asia - Compare the total confirmed & deaths in Sri Lanka with top 10 countries in the Asia & compare the case fatality ratios\hfill\break| Figure 9 |
+|Global Comparison | Compare the total confirmed & deaths in Sri Lanka with top 10 countries in Global & Asia. There are two tabs.\hfill\break * Comparison of the Sri Lanka with Top 10 Countries Reporting the Most COVID-19 Cases in the World - Compare the total confirmed & deaths in Sri Lanka with top 10 countries in the world & compare the case fatality ratios\hfill\break * Comparison of the Sri Lanka with Top 10 Countries Reporting the Most COVID-19 Cases in the Asia - Compare the total confirmed & deaths in Sri Lanka with top 10 countries in the Asia & compare the case fatality ratios\hfill\break| Figure 9 |
 |Global Map| Visualize the distribution of confirmed, recovered & deaths in the world by world map.\hfill\break| Figure 10 |
 |About | This panel contains the details about the dashboard.| Figure 11 |
 
@@ -418,7 +409,7 @@ the total figures. In almost every dashboard, value boxes have been used to repr
 Some dashboards contained interactive maps and data tables to visualize the distribution of cases by country,
 province, region, or state. All dashboards are updated daily in real time. Gender, age groups, and ethnicity can be identified as common breakdowns. Most data sets and related links are available.
 
-We used a color-blind-friendly theme when creating our dashboard. The dashboard includes both static and interactive charts that can be used for explanation, exploration, and display. The data speaks to us, but it is not always easy to understand in what language they are doing it. Hence, we examine the same data under different angles using different types of plots. We do not have district-wise vaccination details. We do not have vaccination information per district. We'll save this for later. Our dashboard is completely replicable. The source code for reproducing the results is accessible in a public GitHub repository at https://github.com/thiyangt/covid19srilanka.
+We used a colour-blind-friendly theme when creating our dashboard. The dashboard includes both static and interactive charts that can be used for explanation, exploration, and display. The data speaks to us, but it is not always easy to understand in what language they are doing it. Hence, we examine the same data under different angles using different types of plots. We do not have district-wise vaccination details. We do not have vaccination information per district. We'll save this for later. Our dashboard is completely replicable. The source code for reproducing the results is accessible in a public GitHub repository at https://github.com/thiyangt/covid19srilanka.
 
 # References
 
