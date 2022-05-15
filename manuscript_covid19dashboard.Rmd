@@ -36,8 +36,7 @@ University of Sri Jayewardenepura, Sri Lanka, CO 10230
 
 **Abstract**
 
-As of September 20th, 2021, 221 countries and territories are infected by the COVID-19 worldwide pandemic. Dashboards are the most often used visualization method for visualizing COVID-19 data and informing the public.  We explored 15 different dashboards. 
-
+Dashboards are the most common visualization method for displaying COVID-19 data and informing the public. We examined 15 different dashboards to see how various visualization techniques were used. This paper describes the creation and implementation of a dashboard for COVID-19 epidemic and vaccination administration data in Sri Lanka.
 
 **Keywords:** Visualization, multiple time series, heatmap, COVID-19 vaccine, flexdashboard
 
@@ -56,7 +55,7 @@ The rest of the paper is organized as follows: [Section 2](#litreview) of dashbo
 Dashboards are one of the best visual interpretation methods for tracking the spread and communication of the COVID-19 pandemic. The 15 dashboards we used in the literature survey are listed in Table 1. We compared dashboards to identify data types, plotting techniques, colour themes, and other features such as interactivity on plots and panel numbers.
 
 
-**Table 01: Labeled of the Dashboards**
+**Table 01: Labels of the dashboards**
 
 
 
@@ -146,7 +145,7 @@ Before developing a dashboard, it is necessary to think about which visualizatio
 
 
 
-**Table 04: Comparison of visualization tools & features of dashboard** 
+**Table 04: Comparison of visualization tools and features of dashboard** 
 
 
 | Name of the Dashboard | Number of panels|  Visualization tools | Fitted on a single screen | Color theme | Dark background | Data available | Real time updated|
@@ -210,7 +209,7 @@ f1 <- ggplot(district.wise.cases, aes(
 
 ```
 
-```{r, comment=NA, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Distribution of COVID19 Cases by Districts: (A) Plotted on a Single Panel, (B) Plotted on Separate Panels.", fig.height=12, fig.width=10}
+```{r, comment=NA, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Distribution of COVID-19 cases by districts: (A) Plotted on a single panel, (B) Plotted on separate panels.", fig.height=12, fig.width=10}
 library(covid19srilanka)
 library(tidyverse)
 data("district.wise.cases")
@@ -259,7 +258,7 @@ p1 <- ggplot(District_Covid_new, aes(Date, District)) +
 ```
 
 
-```{r, echo=FALSE,fig.cap="(A) Global View of Distribution of COVID19 Cases by DIstricts, (B) Local View of Distribution of COVID19 Cases by Districts", fig.width=10, fig.height=10}
+```{r, echo=FALSE,fig.cap="(A) Global view of distribution of COVID-19 cases by districts, (B) Local view of distribution of COVID-19 cases by districts", fig.width=10, fig.height=10}
 
 cov_District <- as.data.frame(District_Covid)
 
@@ -293,7 +292,7 @@ p1/p2
 
 
 
-```{r, comment=NA, message=FALSE, warning=FALSE, fig.cap="Spatial DIstribution of COVID1-19 Cases by Districts", fig.height=8}
+```{r, comment=NA, message=FALSE, warning=FALSE, fig.cap="Spatial distribution of COVID1-19 cases by districts", fig.height=8}
 
 Last_day <- District_Covid %>%
   filter(Date == max(District_Covid$Date))
@@ -377,35 +376,35 @@ The "Sri Lanka COVID-19 Dashboard" provides an overview of the COVID-19 pandemic
 
 
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 1: Overview", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of panel 1: Overview", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image1.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 2: Cases by Wave", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of panel 2: Cases by Wave", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image2.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 3: Distribution of COVID-19 Patients", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of panel 3: Distribution of COVID-19 Patients", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image3.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 4: Vaccination Details", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of panel 4: Vaccination Details", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image4.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 5: Comparison with Top 10 Countries", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of panel 5: Comparison with Top 10 Countries", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image5.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 6: Global Comparison", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of Panel 6: Global comparison", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image6.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 7: World Map", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of panel 7: World Map", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image7.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 8: About", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of panel 8: About", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image8.png")
 ```
 
@@ -419,9 +418,7 @@ the total figures. In almost every dashboard, value boxes have been used to repr
 Some dashboards contained interactive maps and data tables to visualize the distribution of cases by country,
 province, region, or state. All dashboards are updated daily in real time. Gender, age groups, and ethnicity can be identified as common breakdowns. Most data sets and related links are available.
 
-When building our dashboard we use a colour-blind friendly theme. Our dashboard is fully reproducible. The source code to reprouduce the results are available in a public GitHub repository and can be accessonline via https://github.com/thiyangt/covid19srilanka
-
-
+We used a color-blind-friendly theme when creating our dashboard. The dashboard includes both static and interactive charts that can be used for explanation, exploration, and display. The data speaks to us, but it is not always easy to understand in what language they are doing it. Hence, we examine the same data under different angles using different types of plots. We do not have district-wise vaccination details. We do not have vaccination information per district. We'll save this for later. Our dashboard is completely replicable. The source code for reproducing the results is accessible in a public GitHub repository at https://github.com/thiyangt/covid19srilanka.
 
 # References
 
