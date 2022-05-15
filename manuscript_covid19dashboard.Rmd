@@ -58,6 +58,8 @@ Dashboards are one of the best visual interpretation methods for tracking the sp
 
 **Table 01: Labeled of the Dashboards**
 
+
+
 |No |Name of the Dashboard|Reference|
 |:--:|:-------------------|------|
 |1 | COVID-19 dashboard created by the John Hopkins University Center for Systems Science & Engineering (JHU CSSE) |@jh|
@@ -76,6 +78,9 @@ Dashboards are one of the best visual interpretation methods for tracking the sp
 |14 | COVID 19 ZA South Africa Dashboard |@za|
 |15 | COVID-19 dashboard for Germany |@rki|
 
+
+  
+  
 Table 02 summarizes the data types that are most frequently shown in dashboards. As shown in Table 02, all dashboards which are considered in this paper represent the data related to COVID-19 confirmed cases, recovered cases, and deaths. There were 8 dashboards out of 15 dashboards that contained vaccination details.
 
 **Table 02: Summary of data represent in the dashboards**
@@ -381,35 +386,35 @@ The "Sri Lanka COVID-19 Dashboard" provides an overview of the COVID-19 pandemic
 
 
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 1", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of Panel 1: Overview", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image1.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 2", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of Panel 2: Cases by Wave", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image2.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 3", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of Panel 3: Distribution of COVID-19 Patients", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image3.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 4", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of Panel 4: Vaccination Details", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image4.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 5", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of Panel 5: Comparison with Top 10 Countries", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image5.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 6", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of Panel 6: Global Comparison", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image6.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 7", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of Panel 7: World Map", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image7.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Screeshot of Panel 8", out.width="80%", fig.align='center'}
+```{r, echo=FALSE, fig.cap="Screeshot of Panel 8: About", out.width="80%", fig.align='center'}
 knitr::include_graphics("Images/image8.png")
 ```
 
