@@ -1,5 +1,8 @@
 ---
 title: "Interactive Dashboard to Monitor the COVID-19 Outbreak and Vaccine Administration"
+header-includes:
+   - \usepackage{url}
+   - \usepackage{hyperref}
 output: 
   pdf_document: 
     keep_tex: true
@@ -403,13 +406,10 @@ knitr::include_graphics("Images/image8.png")
 
 # Discussion and Further research {#conclusions}
 
-Bar charts and line charts are the most frequently used tools for the visualization of total cases, daily cases, and weekly cases.
-and comparisons with respect to time. Some dashboards contained doughnut-shaped pie charts to summarize
-the total figures. In almost every dashboard, value boxes have been used to represent total figures.
-Some dashboards contained interactive maps and data tables to visualize the distribution of cases by country,
-province, region, or state. All dashboards are updated daily in real time. Gender, age groups, and ethnicity can be identified as common breakdowns. Most data sets and related links are available.
+Bar charts and line charts are the most frequently used tools for the visualization of total cases, daily cases, and weekly cases, and comparisons with respect to time. Some dashboards contained doughnut-shaped pie charts to summarize the total figures. In almost every dashboard, value boxes have been used to represent total figures.
+Some dashboards contained interactive maps and data tables to visualize the distribution of cases by country, province, region, or state. All dashboards are updated daily in real time. Gender, age groups, and ethnicity can be identified as common breakdowns. Most data sets and related links are available.
 
-We used a colour-blind-friendly theme when creating our dashboard. The dashboard includes both static and interactive charts that can be used for explanation, exploration, and display. The data speaks to us, but it is not always easy to understand in what language they are doing it. Hence, we examine the same data under different angles using different types of plots. We do not have district-wise vaccination details. We do not have vaccination information per district. We'll save this for later. Our dashboard is completely replicable. The source code for reproducing the results is accessible in a public GitHub repository at https://github.com/thiyangt/covid19srilanka.
+We used a colour-blind-friendly theme when creating our dashboard. The dashboard includes both static and interactive charts that can be used for explanatory (telling you something), exploratory (give user the chance to interact with the plots), and exhibitory (showing data visually) purposes. The data speaks to us, but it is not always easy to understand in what language they are doing it. Hence, we examine the same data under different angles using different types of plots. We do not have district-wise vaccination details. This is a potential future direction to think about. Our dashboard is completely reproducible. The source code for reproducing the results is accessible in a public GitHub repository at https://github.com/thiyangt/covid19srilanka.
 
 # References
 
